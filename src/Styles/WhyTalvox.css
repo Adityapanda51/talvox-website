@@ -1,0 +1,30 @@
+/* src/Styles/WhyTalvox.css */
+.why-talvox {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .why-talvox h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color:  #25BE97;
+  }
+  
+  .why-talvox ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .why-talvox ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .why-talvox p {
+    font-size: 1.2rem;
+    /* color: rgb(81, 57, 57); */
+    color: black;
+  }
+  

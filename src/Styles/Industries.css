@@ -1,0 +1,106 @@
+
+  .industries-page-container {
+    padding: 40px;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+.industries-page-container h1 {
+    font-size: 2.5rem;
+    color:  #25BE97;
+    margin-bottom: 20px;
+}
+
+.industries-page-container p {
+    font-size: 1.2rem;
+    color: black;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.industries-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.industry-card {
+    position: relative; /* Position relative to use absolute positioning for the overlay */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-size: cover; /* Ensures the background image covers the card */
+    background-position: center; /* Centers the background image */
+    color: white; /* Adjust text color to contrast with background image */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align text to the bottom of the card */
+}
+
+.industry-card::before {
+    content: ""; /* Empty content for the overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    border-radius: 10px; /* Match card border radius */
+    z-index: 1; /* Place the overlay behind the text but above the background image */
+}
+
+.industry-card h2, .industry-card p {
+    position: relative; /* Ensure text is above the overlay */
+    z-index: 2; /* Place text above the overlay */
+    padding: 10px;
+}
+
+.industry-card h2 {
+    font-size: 2rem;
+    color:  #25BE97;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(240, 235, 235, 0.908);
+}
+
+.industry-card p {
+    font-size: 1rem;
+    color: white;
+}
+
+.industry-card:hover {
+    transform: scale(1.10);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .industries-page-container h1 {
+        font-size: 2rem;
+    }
+
+    .industries-page-container p {
+        font-size: 1rem;
+    }
+
+    .industry-card {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .industries-page-container h1 {
+        font-size: 1.75rem;
+    }
+
+    .industries-page-container p {
+        font-size: 0.9rem;
+    }
+
+    .industry-card {
+        max-width: 100%;
+    }
+}

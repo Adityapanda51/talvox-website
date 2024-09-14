@@ -1,0 +1,92 @@
+.careers {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.careers h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color:  #25BE97;
+}
+
+.careers .intro {
+  font-size: 2rem;
+  color:  #25BE97;
+  margin-bottom: 20px;
+}
+
+.careers p {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 20px;
+  word-wrap: break-word; /* Ensure long text wraps properly */
+}
+
+.careers h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color:  #25BE97;
+}
+
+.careers ul, .careers ol {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.careers ul li, .careers ol li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.careers .how-to-apply {
+  background-color: #e9ecef;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contact {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: blue;
+  display: block;
+  word-wrap: break-word; /* Ensure long contact info wraps properly */
+}
+
+.careers .stay-connected {
+  margin-top: 30px;
+}
+
+.careers .stay-connected a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.careers .stay-connected a:hover {
+  text-decoration: underline;
+}
+
+.careers .equal-opportunity {
+  margin-top: 30px;
+  font-size: 1rem;
+  color: black;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .careers h1 {
+    font-size: 2rem;
+  }
+
+  .careers h2 {
+    font-size: 1.5rem;
+  }
+
+  .careers p, .careers ul li, .careers ol li {
+    font-size: 1rem;
+  }
+}
+

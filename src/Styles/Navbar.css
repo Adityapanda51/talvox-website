@@ -1,0 +1,102 @@
+
+  .custom-navbar {
+    background: linear-gradient(135deg, #4a90e2, #25BE97);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  
+  .custom-navbar:hover {
+    background: linear-gradient(135deg, #4a90e2, #25BE97, #0056b3);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    /* Transform scale */
+    transform: scale(5); /* Adjust scale value to your preference */
+    /* Maintain the logo's aspect ratio */
+    object-fit: contain; /* Ensure the image fits inside its container */
+    background-size: contain; /* Adjust as needed */
+    display: inline-block; /* Ensure it’s not display:none */
+    overflow: hidden;
+}
+
+  .logo:hover {
+    transform: scale(1.05);
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white !important;
+    margin: 0 1rem;
+    font-weight: 600;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #fffcfc !important;
+    border-bottom: 3px solid #fffcfc;
+  }
+  
+  .custom-navbar .navbar-toggler {
+    border: none;
+  }
+  
+  .custom-navbar .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30"%3e%3cpath stroke="%23ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15h20M5 9h20M5 21h20" /%3e%3c/svg%3e');
+  }
+  
+  .custom-navbar .navbar-collapse {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .custom-navbar .navbar-collapse.show {
+    display: flex;
+  }
+  
+  .custom-navbar .navbar-nav .contact-link {
+    margin-top: auto; 
+    
+  }
+  
+  @media (max-width: 768px) {
+    .custom-navbar .navbar-nav {
+      flex-direction: column;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      padding: 0.5rem 0;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      margin: 0; /* Ensure no additional margin */
+    }
+    
+    .custom-navbar .navbar-nav .nav-link {
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #fff; /* Add border to separate items */
+      font-size: 1.1rem;
+      text-align: center;
+      display: block; /* Ensure each item is on its own line */
+    }
+    
+    .custom-navbar .navbar-nav .contact-link {
+      border-top: none; 
+      margin-top: 0; 
+      padding-top: 0;
+    }
+    
+    .custom-navbar .navbar-toggler {
+      display: block;
+    }
+  }
+  
