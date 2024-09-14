@@ -10,24 +10,41 @@
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
   }
   
-  .logo {
-    height: 50px;
-    width: 50px;
-    border-radius: 10px;
-    transition: transform 0.5s;
-    /* Transform scale */
-    transform: scale(2); /* Adjust scale value to your preference */
-    /* Maintain the logo's aspect ratio */
-    object-fit: contain; /* Ensure the image fits inside its container */
-    background-size: contain; /* Adjust as needed */
-    display: inline-block; /* Ensure it’s not display:none */
-    overflow: hidden;
+
+.logo {
+  height: auto; /* Keep height auto to maintain aspect ratio */
+  width: 60px; /* Set an initial width */
+  max-width: 100%; /* Ensure responsiveness */
+  border-radius: 50%; /* Apply circular border if desired */
+  transition: transform 0.3s ease; /* Smooth scaling on hover */
+  object-fit: cover; /* Ensures image covers the container without distortion */
+  display: block;
+  overflow: hidden;
 }
 
-  .logo:hover {
-    transform: scale(1.05);
+/* On hover, slightly increase the logo size for a smooth effect */
+.logo:hover {
+  transform: scale(1.1); /* Slightly larger on hover */
+}
+
+/* Adjust for tablets */
+@media (max-width: 768px) {
+  .logo {
+      width: 60px; /* Smaller width for tablets */
   }
-  
+}
+
+/* Adjust for mobile devices */
+@media (max-width: 480px) {
+  .logo {
+      width: 50px; /* Smaller width for mobile screens */
+  }
+}
+
+
+
+
+ 
   .navbar-nav {
     display: flex;
     justify-content: center;
