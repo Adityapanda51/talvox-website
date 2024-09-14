@@ -16,7 +16,7 @@
     border-radius: 10px;
     transition: transform 0.5s;
     /* Transform scale */
-    transform: scale(5); /* Adjust scale value to your preference */
+    transform: scale(2); /* Adjust scale value to your preference */
     /* Maintain the logo's aspect ratio */
     object-fit: contain; /* Ensure the image fits inside its container */
     background-size: contain; /* Adjust as needed */
