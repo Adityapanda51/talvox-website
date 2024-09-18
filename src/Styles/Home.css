@@ -1,153 +1,202 @@
-  
-  .home-section {
-    position: relative;
-    height: 60vh; /* Full viewport height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background: url('../assets/home-background.png') no-repeat center center/cover; /* Full-screen background image */
-    border-radius: 0%;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  .home-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
-    z-index: 0;
-  }
-  
-  .hero-content {
-    text-align: center;
-    color: white;
-    max-width: 600px;
-    z-index: 1;
+/* Home Section Styling */
+.home-section {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Aligns content horizontally to the left */
+  overflow: hidden;
+  background: url('../assets/home-background.png') no-repeat center center/cover; /* Full-screen background image */
+  border-radius: 0%;
+  padding-left: 5rem; /* Add padding to move content away from the left edge */
+}
+
+a {
+  text-decoration: none;
+}
+
+.home-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2); /* Subtle white overlay */
+  z-index: 0;
+}
+
+/* Hero Content */
+.hero-content {
+  text-align: left; /* Align text to the left */
+  color: black;
+  max-width: 600px;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 0.5s;
+  margin-bottom: 7rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem; /* Adjust size */
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: black;
+  animation: scaleUp 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: black;
+  animation: scaleUp 1s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the left */
+  gap: 1rem;
+}
+
+.cta-btn {
+  background-color: #25BE97;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  padding: 0.8rem 2.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-btn.secondary {
+  background-color: black;
+  color: white;
+}
+
+.cta-btn.secondary::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.6s ease;
+}
+
+.cta-btn.secondary:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Keyframes for animation */
+@keyframes fadeInUp {
+  from {
     opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1.5s ease-out forwards;
-    animation-delay: 0.5s; /* Delayed start for the content */
+    transform: translateY(30px);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .home-section {
+    height: 90vh;
+    padding-left: 2rem; /* Reduce left padding for smaller screens */
+  }
+
+  .hero-content {
+    margin-bottom: 5rem;
+    max-width: 80%;
+  }
+
   .hero-content h1 {
-    font-size: 2.5rem; /* Adjust size as needed */
-    margin-bottom: 1rem;
-    font-weight: 1000;
-    line-height: 1.2;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    animation: scaleUp 1s ease-out forwards;
-    animation-delay: 0.3s; /* Staggered animation delay */
+    font-size: 2.5rem;
   }
-  
+
   .hero-content p {
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-    font-weight: 700;
-    /* color: #D0D0D0; */
-    color:  #25BE97;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    animation: scaleUp 1s ease-out forwards;
-    animation-delay: 0.6s; /* Staggered animation delay */
+    font-size: 1.3rem;
   }
-  
-  .cta-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .home-section {
+    height: 85vh;
+    justify-content: flex-start;
+    padding-top: 50px;
+    padding-left: 1.5rem; /* Further reduce left padding for mobile screens */
   }
-  
-  .cta-btn {
-    background-color: #25BE97;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    padding: 0.8rem 2.5rem;
+
+  .hero-content {
+    padding: 0 1.5rem;
+    margin-bottom: 4rem;
+    max-width: 100%;
+    text-align: left; /* Keep text left-aligned */
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
     font-size: 1.2rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
   }
-  
-  .cta-btn.secondary {
-    background-color: #4ae2be;
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: flex-start; /* Keep buttons aligned to the left */
   }
-  
-  .cta-btn.secondary::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300%;
-    height: 300%;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: transform 0.6s ease;
+
+  .cta-btn {
+    width: 100%; /* Full-width buttons for smaller screens */
+    margin-bottom: 1rem;
   }
-  
-  .cta-btn.secondary:hover::before {
-    transform: translate(-50%, -50%) scale(1);
+}
+
+@media (max-width: 480px) {
+  .home-section {
+    height: 80vh;
+    padding-top: 30px;
   }
-  
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
   }
-  
-  @keyframes scaleUp {
-    from {
-      opacity: 0;
-      transform: scale(0.9);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
+
+  .hero-content p {
+    font-size: 1rem;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .home-section {
-      height: 80vh; /* Adjusted height for smaller screens */
-    }
-  
-    .hero-content {
-      padding: 1rem;
-      max-width: 90%;
-    }
-  
-    .hero-content h1 {
-      font-size: 1.8rem;
-    }
-  
-    .hero-content p {
-      font-size: 1rem;
-    }
-  
-    .cta-buttons {
-      flex-direction: column;
-    }
-  
-    .cta-btn {
-      width: 100%;
-      margin-bottom: 1rem;
-    }
+
+  .cta-btn {
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
   }
+}
+
   
   
   

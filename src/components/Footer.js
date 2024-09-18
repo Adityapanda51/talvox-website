@@ -8,31 +8,31 @@ const Footer = () => {
         <div className="footer-section quick-links">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#aboutus">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#industries">Industries</a></li>
-            <li><a href="#contactus">Contact Us</a></li>
+            <li><a href="/">Home</a></li>
+            {/* <li><a href="#about">About Us</a></li> */}
+            <li><a href="services">Services</a></li>
+            <li><a href="industries">Industries</a></li>
+            <li><a href="contact">Contact Us</a></li>
           </ul>
         </div>
 
         <div className="footer-section services">
           <h3>Services</h3>
           <ul>
-            <li><a href="#it-services">IT Services</a></li>
-            <li><a href="#hr-services">HR Services</a></li>
-            <li><a href="#digital-marketing">Digital Marketing</a></li>
+            <li><a href="it-services">IT Services</a></li>
+            <li><a href="hr-services">HR Services</a></li>
+            <li><a href="digital-marketing">Digital Marketing</a></li>
           </ul>
         </div>
 
         <div className="footer-section contact-us">
           <h3>Contact Us</h3>
-          <p><strong>Office Address:</strong> [Your Office Address]</p>
-          <p><strong>Phone:</strong> [Your Phone Number]</p>
-          <p><strong>Email:</strong> <a href="mailto:info@talvox.com">info@talvox.com</a></p>
+          <p><strong>Office Address:</strong> Siri Gajjela Towers, Mothi Nagar,<br></br>Vengal Rao Nagar,<br></br>Ameerpet,<br></br>Hyderabad, 500038</p>
+          <p><strong>Phone:</strong> 040-45011686</p>
+          <p><strong>Email:</strong> <a href="mailto:info@talvox.com">hr@talvox.com</a></p>
         </div>
 
-      
+  
 
         <div className="footer-section social-media">
           <h3>Follow Us</h3>
