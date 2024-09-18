@@ -12,7 +12,7 @@
 
 
     h4{
-        color:  #25BE97;
+        color:  black;
     }
   }
   
@@ -34,23 +34,23 @@
   }
   
   .hr-details-content h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
-    color:  #25BE97;
+    color:  black;
   }
   
   .hr-details-content h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-top: 30px;
-    border-bottom: 2px solid #25BE97;
+    border-bottom: 2px solid black;
     padding-bottom: 10px;
   }
   
   .hr-details-content h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 20px;
-    color:  #25BE97;
-    border-bottom: 2px solid #25BE97;
+    color:  black;
+    border-bottom: 2px solid black;
   }
   
   .hr-details-content p {

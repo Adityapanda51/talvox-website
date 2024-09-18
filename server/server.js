@@ -17,7 +17,7 @@ app.post('/send', (req, res) => {
 
   // Create the transporter with your email service
   const transporter = nodemailer.createTransport({
-    service: 'Gmail', // Change to your email service provider if needed
+    service: 'gmail', // Change to your email service provider if needed
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS,

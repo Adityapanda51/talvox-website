@@ -503,7 +503,7 @@ const ServicesPage = () => {
           <p className="service-description">
             From cutting-edge software development to robust IT infrastructure management, Talvox empowers your business with the technology it needs to stay ahead in a competitive market. Our IT experts are dedicated to creating solutions that are not only innovative but also scalable and secure.
           </p>
-          <button onClick={handleShowITDetails} className="cta-button">Learn More About IT Services</button>
+          <button onClick={handleShowITDetails} className="cta-button btn1">Learn More About IT Services</button>
         </div>
 
         {/* HR Services Card */}
@@ -518,7 +518,7 @@ const ServicesPage = () => {
           <p className="service-description">
             People are at the heart of every successful business. Talvox provides end-to-end HR services that ensure you attract, retain, and develop the best talent. Whether you need recruitment support, onboarding assistance, or HR management, our team is here to make sure your human resources are aligned with your business goals.
           </p>
-          <button onClick={handleShowHRDetails} className="cta-button">Explore HR Solutions</button>
+          <button onClick={handleShowHRDetails} className="cta-button btn2">Explore HR Solutions</button>
         </div>
 
         {/* Digital Marketing Services Card */}
@@ -533,7 +533,7 @@ const ServicesPage = () => {
           <p className="service-description">
             In the digital age, visibility is key. Our Digital Marketing services are designed to enhance your online presence and connect you with your target audience. From SEO and social media management to content marketing and PPC campaigns, Talvox crafts strategies that deliver measurable results.
           </p>
-          <button onClick={handleShowDigitalMarketingDetails} className="cta-button">Discover Digital Marketing</button>
+          <button onClick={handleShowDigitalMarketingDetails} className="cta-button btn3">Discover Digital Marketing</button>
         </div>
       </div>
     </div>

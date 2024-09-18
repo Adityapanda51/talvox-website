@@ -30,7 +30,7 @@
 
 .contact-info h2, .business-hours h2 {
   margin-top: 0;
-  color:  #25BE97;
+  color:  black;
 }
 
 /* Responsive Styles */
@@ -54,7 +54,7 @@
 .contact-form h2 {
   text-align: center;
   margin-bottom: 1rem; /* Space below the heading */
-  color:  #25BE97;
+  color:  black;
 }
 
 .contact-form form {
@@ -83,7 +83,7 @@
 
 .contact-form button {
   padding: 10px 20px;
-  background-color: #25BE97;
+  background-color: black;
   color: white;
   border: none;
   border-radius: 5px;
@@ -104,7 +104,7 @@
 .get-in-touch h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color:  #25BE97;
+  color:  black;
 }
 
 .get-in-touch p {

@@ -40,13 +40,17 @@ a {
 }
 
 .hero-content h1 {
-  font-size: 3rem; /* Adjust size */
+  font-size: 3.5rem; 
   margin-bottom: 1rem;
   font-weight: 700;
   line-height: 1.2;
   color: black;
   animation: scaleUp 1s ease-out forwards;
   animation-delay: 0.3s;
+}
+
+h2 {
+  font-size: 3rem;
 }
 
 .hero-content p {
@@ -199,4 +203,56 @@ a {
 
   
   
-  
+
+
+/* Styles for Industry Specialities */
+.industry-specialities-section {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.industry-specialities-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.industry-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.industry-card {
+  position: relative;
+  background: white;
+  border-radius: 50px 0 50px 0 !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+
+.industry-content {
+  padding-top: 2.5rem; /* Space for logo */
+}
+
+.industry-content h3 {
+  font-size: 1.5rem;
+}
+
+
+.small-card img {
+  width: 80px; /* Adjust as needed */
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .industry-card {
+    width: 90%;
+  }
+}

@@ -7,13 +7,13 @@
 
 .careers h1 {
   margin-bottom: 20px;
-  font-size: 2.5rem;
-  color:  #25BE97;
+  font-size: 3rem;
+  color:  black;
 }
 
 .careers .intro {
   font-size: 2rem;
-  color:  #25BE97;
+  color:  black;
   margin-bottom: 20px;
 }
 
@@ -27,7 +27,7 @@
 .careers h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color:  #25BE97;
+  color:  black;
 }
 
 .careers ul, .careers ol {

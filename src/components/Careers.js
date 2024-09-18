@@ -31,6 +31,16 @@ const Careers = () => {
         </ol>
         <p>Have questions or need more information? Contact us at <strong className="contact">praveenkambampati1@gmail.com </strong>or on <strong className="contact">+919959002091</strong>.</p>
       </div>
+
+      <div className="join-us">
+        <h2>Join Us on Our Journey</h2>
+        <p>
+          At Talvox, we're not just a service provider – we're your partners in growth. Whether you're looking to optimize your IT infrastructure, build a world-class team, or enhance your online presence, Talvox has the expertise and resources to help you succeed.
+        </p>
+      </div>
+
+
+
       <div className="stay-connected">
         <h2>Stay Connected</h2>
         <p>Even if you don’t see a current opening that fits your skills, we’d still love to hear from you. Connect with us on LinkedIn or sign up for our newsletter to stay updated on future opportunities.</p>

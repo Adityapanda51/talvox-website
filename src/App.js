@@ -35,8 +35,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import AboutUs from './components/AboutUs';
 import Home from './components/Home';
-// import AboutUs from './components/AboutUs';
 import Services from './components/Services';
 import Industries from './components/Industries';
 import WhyTalvox from './components/WhyTalvox';
@@ -58,7 +58,7 @@ const App = () => {
       <Routes>
         {/* Define routes for each component */}
         <Route path="/" element={<Home />} />
-        {/* <Route path="/about" element={<AboutUs />} /> */}
+        <Route path="/about" element={<AboutUs/>} />
         <Route path="/services" element={<Services />} />
         <Route path="/it-services" element={<ITServices />} />
         <Route path="/hr-services" element={<HRDetailPage />} />
