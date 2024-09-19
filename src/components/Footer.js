@@ -38,7 +38,7 @@ const Footer = () => {
         <div className="footer-section social-media">
           <h3>Follow Us</h3>
           <ul>
-            <li><a href="https://www.linkedin.com/company/talvox" target="_blank" rel="noopener noreferrer" className="social-icon linkedin">LinkedIn</a></li>
+            <li><a href="https://in.linkedin.com/company/talvox-pvt-ltd" target="_blank" rel="noopener noreferrer" className="social-icon linkedin">LinkedIn</a></li>
             <li><a href="https://twitter.com/talvox" target="_blank" rel="noopener noreferrer" className="social-icon twitter">Twitter</a></li>
             <li><a href="https://www.facebook.com/talvox" target="_blank" rel="noopener noreferrer" className="social-icon facebook">Facebook</a></li>
           </ul>

@@ -11,6 +11,22 @@
   color:  black;
 }
 
+.careers h1 {
+  position: relative; 
+}
+
+.careers h1::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  bottom: -10px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
 .careers .intro {
   font-size: 2rem;
   color:  black;
@@ -21,7 +37,7 @@
   font-size: 1rem;
   color: black;
   margin-bottom: 20px;
-  word-wrap: break-word; /* Ensure long text wraps properly */
+  word-wrap: break-word; 
 }
 
 .careers h2 {
@@ -53,7 +69,7 @@
   font-weight: bold;
   color: blue;
   display: block;
-  word-wrap: break-word; /* Ensure long contact info wraps properly */
+  word-wrap: break-word; 
 }
 
 .careers .stay-connected {
@@ -75,7 +91,7 @@
   color: black;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   .careers h1 {
     font-size: 2rem;

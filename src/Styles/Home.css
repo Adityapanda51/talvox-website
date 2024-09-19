@@ -211,11 +211,11 @@ h2 {
 
 
 
-
+/* 
 
 
 .specialities-page-container {
-  padding: 40px;
+  padding: 20px;
   background-color: #f4f4f9;
   text-align: center;
 }
@@ -237,11 +237,11 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 20px 60px;
 }
 
 .speciality-card {
-  position: relative; /* Position relative to use absolute positioning for the overlay */
+  position: relative; 
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -249,29 +249,29 @@ h2 {
   width: 100%;
   max-width: 350px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-size: cover; /* Ensures the background image covers the card */
-  background-position: center; /* Centers the background image */
-  color: white; /* Adjust text color to contrast with background image */
+  background-size: cover; 
+  background-position: center; 
+  color: white; 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Align text to the bottom of the card */
+  justify-content: flex-end; 
 }
 
 .speciality-card::before {
-  content: ""; /* Empty content for the overlay */
+  content: ""; 
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
-  border-radius: 10px; /* Match card border radius */
-  z-index: 1; /* Place the overlay behind the text but above the background image */
+  background: rgba(0, 0, 0, 0.6); 
+  border-radius: 10px; 
+  z-index: 1; 
 }
 
 .speciality-card h2, .speciality-card p {
-  position: relative; /* Ensure text is above the overlay */
-  z-index: 2; /* Place text above the overlay */
+  position: relative; 
+  z-index: 2; 
   padding: 10px;
 }
 
@@ -279,7 +279,7 @@ h2 {
   font-size: 2rem;
   color: #25BE97;
   margin-bottom: 10px;
-  /* text-shadow: 1px 1px 2px rgba(240, 235, 235, 0.908); */
+  
 }
 
 .speciality-card p {
@@ -322,7 +322,7 @@ h2 {
 
 .speciality-card .know-more-link {
   position: relative;
-  z-index: 2; /* Ensure the link is above the overlay */
+  z-index: 2; 
   margin-top: 10px;
   font-size: 1.2rem;
   color: #25BE97;
@@ -332,7 +332,7 @@ h2 {
   padding: 10px 20px;
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease;
-}
+} */
 
 
 
@@ -347,6 +347,7 @@ h2 {
   padding: 40px;
   background-color: #f4f4f9;
   text-align: center;
+  color: black;
 }
 
 .about-page-container h1 {
@@ -354,6 +355,23 @@ h2 {
   color: black;
   margin-bottom: 20px;
 }
+
+
+.about-page-container h1 {
+  position: relative; /* Needed for absolute positioning of the ::after pseudo-element */
+}
+
+.about-page-container h1::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  bottom: -10px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 .about-page-container p {
   font-size: 1.2rem;
@@ -502,6 +520,238 @@ h2 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General section styling */
+#what-we-offer {
+  padding: 40px 50px;
+  background-color: #f4f7fa;
+  color: black;
+}
+
+#what-we-offer h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 60px;
+  color: black;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+#what-we-offer h2::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Offer container */
+.offer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Offer card */
+.offer-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 300px;
+}
+
+.offer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Image section */
+.card-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.offer-card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+/* Content section */
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 1.8rem;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: black;
+  line-height: 1.6;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .offer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  #what-we-offer h2 {
+    font-size: 2.2rem;
+  }
+
+  .card-content h3 {
+    font-size: 1.6rem;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+
+/* General section styling */
+.why-talvox-section {
+  padding: 10px 20px;
+  background-color: #f0f5f9; /* Subtle background color to differentiate the section */
+  margin: 40px 0;
+}
+
+.why-talvox-section h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 40px;
+  font-weight: 600;
+  position: relative;
+}
+
+.why-talvox-section h2::after {
+  content: '';
+  width: 100px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Styling the list */
+.why-talvox-list {
+  list-style: none;
+  padding: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.why-talvox-list li {
+  font-size: 1.2rem;
+  color: black;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  padding-left: 40px;
+  position: relative;
+}
+
+/* Add a custom bullet point using a pseudo-element */
+.why-talvox-list li::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+/* Styling for the strong (bold) text */
+.why-talvox-list li strong {
+  font-size: 1.3rem;
+  color: black;
+  font-weight: 600;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .why-talvox-section h2 {
+    font-size: 2rem;
+  }
+
+  .why-talvox-list li {
+    font-size: 1.1rem;
+    padding-left: 30px;
+  }
+
+  .why-talvox-list li::before {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .why-talvox-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .why-talvox-list li {
+    font-size: 1rem;
+    padding-left: 25px;
+  }
+
+  .why-talvox-list li::before {
+    width: 6px;
+    height: 6px;
+  }
+}
 
 
 

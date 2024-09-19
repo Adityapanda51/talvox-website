@@ -10,6 +10,26 @@
     font-size: 3rem;
     color: black;
   }
+
+
+
+  .why-talvox h2 {
+    position: relative; /* Needed for absolute positioning of the ::after pseudo-element */
+  }
+  
+  .why-talvox h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    bottom: -10px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+
   
   .why-talvox ul {
     list-style-type: none;
