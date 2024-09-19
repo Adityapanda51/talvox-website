@@ -534,9 +534,6 @@ h2 {
 
 
 
-
-
-
 /* General section styling */
 #what-we-offer {
   padding: 40px 50px;
@@ -570,7 +567,7 @@ h2 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px; /* Increased gap for better spacing */
 }
 
 /* Offer card */
@@ -581,7 +578,9 @@ h2 {
   overflow: hidden;
   max-width: 400px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  flex: 1 1 300px;
+  flex: 1 1 calc(33.333% - 20px); /* Adjusted for better responsiveness */
+  display: flex;
+  flex-direction: column; /* Stack the image and content vertically */
 }
 
 .offer-card:hover {
@@ -611,6 +610,7 @@ h2 {
 .card-content {
   padding: 20px;
   text-align: center;
+  flex: 1; /* Allow content to grow */
 }
 
 .card-content h3 {
@@ -633,7 +633,7 @@ h2 {
   }
 
   .offer-card {
-    max-width: 100%;
+    max-width: 90%; /* Full width on smaller screens */
   }
 }
 
@@ -650,6 +650,7 @@ h2 {
     font-size: 0.9rem;
   }
 }
+
 
 
 
