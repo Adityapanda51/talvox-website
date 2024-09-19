@@ -205,54 +205,308 @@ h2 {
   
 
 
-/* Styles for Industry Specialities */
-.industry-specialities-section {
-  padding: 2rem;
-  background-color: #f9f9f9;
+
+
+
+
+
+
+
+
+
+.specialities-page-container {
+  padding: 40px;
+  background-color: #f4f4f9;
   text-align: center;
 }
 
-.industry-specialities-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+.specialities-page-container h1 {
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 20px;
 }
 
-.industry-cards-container {
+.specialities-page-container p {
+  font-size: 1.2rem;
+  color: black;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.specialities-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
   justify-content: center;
+  gap: 20px;
 }
 
-.industry-card {
-  position: relative;
-  background: white;
-  border-radius: 50px 0 50px 0 !important;
+.speciality-card {
+  position: relative; /* Position relative to use absolute positioning for the overlay */
+  background: #fff;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  padding: 1rem;
-  text-align: center;
-  overflow: hidden;
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-size: cover; /* Ensures the background image covers the card */
+  background-position: center; /* Centers the background image */
+  color: white; /* Adjust text color to contrast with background image */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align text to the bottom of the card */
 }
 
-
-
-.industry-content {
-  padding-top: 2.5rem; /* Space for logo */
+.speciality-card::before {
+  content: ""; /* Empty content for the overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+  border-radius: 10px; /* Match card border radius */
+  z-index: 1; /* Place the overlay behind the text but above the background image */
 }
 
-.industry-content h3 {
-  font-size: 1.5rem;
+.speciality-card h2, .speciality-card p {
+  position: relative; /* Ensure text is above the overlay */
+  z-index: 2; /* Place text above the overlay */
+  padding: 10px;
 }
 
+.speciality-card h2 {
+  font-size: 2rem;
+  color: #25BE97;
+  margin-bottom: 10px;
+  /* text-shadow: 1px 1px 2px rgba(240, 235, 235, 0.908); */
+}
 
-.small-card img {
-  width: 80px; /* Adjust as needed */
-  height: auto;
+.speciality-card p {
+  font-size: 1rem;
+  color: white;
+}
+
+.speciality-card:hover {
+  transform: scale(1.10);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
-  .industry-card {
-    width: 90%;
+  .specialities-page-container h1 {
+      font-size: 2rem;
+  }
+
+  .specialities-page-container p {
+      font-size: 1rem;
+  }
+
+  .speciality-card {
+      max-width: 300px;
   }
 }
+
+@media (max-width: 480px) {
+  .specialities-page-container h1 {
+      font-size: 1.75rem;
+  }
+
+  .specialities-page-container p {
+      font-size: 0.9rem;
+  }
+
+  .speciality-card {
+      max-width: 100%;
+  }
+}
+
+.speciality-card .know-more-link {
+  position: relative;
+  z-index: 2; /* Ensure the link is above the overlay */
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #25BE97;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #25BE97;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+.about-page-container {
+  padding: 40px;
+  background-color: #f4f4f9;
+  text-align: center;
+}
+
+.about-page-container h1 {
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.about-page-container p {
+  font-size: 1.2rem;
+  color: black;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+/* Flexbox container for the cards */
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* About card styling */
+.about-card {
+  position: relative;
+  background: #fff;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Card Header for logo and title */
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-logo {
+  width: 80px; /* Adjust size of the logo */
+  height: 80px;
+  margin-right: 15px; /* Space between the logo and title */
+}
+
+/* Overlay effect */
+.about-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.about-card h2,
+.about-card p {
+  position: relative;
+  z-index: 2;
+  padding: 10px;
+  color: black;
+}
+
+/* Headings */
+.about-card h2 {
+  font-size: 1.8rem;
+  /* color: #25be97; */
+  color: black;
+  margin-bottom: 10px;
+}
+
+.about-card p {
+  font-size: 1rem;
+  color: black;
+}
+
+/* Hover effect */
+.about-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+  .about-page-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-page-container p {
+    font-size: 1.1rem;
+  }
+
+  .about-card {
+    max-width: 300px;
+  }
+
+  .card-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .about-card h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Small devices (mobile) */
+@media (max-width: 480px) {
+  .about-page-container {
+    padding: 20px;
+  }
+
+  .about-page-container h1 {
+    font-size: 1.75rem;
+  }
+
+  .about-page-container p {
+    font-size: 1rem;
+  }
+
+  .about-list {
+    flex-direction: column; /* Stack the cards vertically on small screens */
+    align-items: center;
+  }
+
+  .about-card {
+    max-width: 100%;
+  }
+
+  .card-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .about-card h2 {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

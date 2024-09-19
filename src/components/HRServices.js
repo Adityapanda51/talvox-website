@@ -4,9 +4,8 @@ import "../Styles/HRServices.css";
 const HRDetailPage = ({ onClose }) => {
   return (
     <div className="hr-detail-page-container">
-      <button className="close-button" onClick={onClose}>
-        Close
-      </button>
+       <button onClick={onClose} className="close-button">Close</button>
+
       <div className="hr-details-content">
         <h1>HR Services</h1>
         <p>

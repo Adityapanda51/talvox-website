@@ -54,8 +54,8 @@ const ContactUs = () => {
         <div className='contact-business'>
           <div className="contact-info">
             <h2>Contact Information</h2>
-            <p><strong>Office Address:</strong> 123 Street Name, City, Country</p>
-            <p><strong>Phone:</strong> +123 456 7890</p>
+            <p><strong>Office Address:</strong> Siri Gajjela Towers, Mothi Nagar,<br></br>Vengal Rao Nagar, Ameerpet, Hyderabad, 500038</p>
+            <p><strong>Phone:</strong>  040-45011686</p>
             <p><strong>Email:</strong></p>
             <ul>
               <li>For IT Services: it@example.com</li>

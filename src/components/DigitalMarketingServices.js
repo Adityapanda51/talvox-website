@@ -4,9 +4,8 @@ import "../Styles/DigitalMarketingServices.css";
 const DigitalMarketingDetailPage = ({ onClose }) => {
   return (
     <div className="digital-marketing-detail-page-container">
-      <button className="close-button" onClick={onClose}>
-        Close
-      </button>
+       <button onClick={onClose} className="close-button">Close</button>
+
       <div className="digital-marketing-details-content">
         <h1>Digital Marketing</h1>
         <p>
