@@ -167,7 +167,8 @@ h1 {
   font-size: 1.5rem;
   margin: 10px 0;
   font-weight: 400;
-  color: #34495e;
+  /* color: #34495e; */
+  color: black;
 }
 
 .description {
@@ -176,7 +177,8 @@ h1 {
   max-width: 800px;
   margin: 0 auto 40px;
   padding: 0 20px;
-  color: #34495e;
+  /* color: #34495e; */
+  color: black;
 }
 
 .why-work-card {
