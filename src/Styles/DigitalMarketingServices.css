@@ -29,27 +29,29 @@
   }
   
   .close-button:hover {
-    background-color:#25BE97;
+    background-color: #288073;
   }
   
   .digital-marketing-details-content h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color:  black;
+    border-bottom: 3px solid #288073;
+    color: #288073;
   }
   
-  .digital-marketing-details-content h2 {
-    font-size: 2.5rem;
-    margin-top: 30px;
-    border-bottom: 2px solid black;
+  .digital-marketing-details-content h4 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    border-bottom: 2px solid  #288073;
+    color: #288073;
     padding-bottom: 10px;
   }
   
   .digital-marketing-details-content h3 {
     font-size: 2rem;
     margin-top: 20px;
-    color:  black;
-    border-bottom: 2px solid black;
+    color:   #288073;
+    border-bottom: 2px solid  #288073;
   }
   
   .digital-marketing-details-content p {
@@ -85,15 +87,15 @@
     }
   
     .digital-marketing-details-content h1 {
-      font-size: 2rem;
-    }
-  
-    .digital-marketing-details-content h2 {
-      font-size: 1.5rem;
+      font-size: 2.5rem;
     }
   
     .digital-marketing-details-content h3 {
-      font-size: 1.25rem;
+      font-size: 1.5rem !important;
+    }
+
+    .digital-marketing-details-content h4 {
+      font-size: 1.2rem;
     }
   }
   
@@ -111,10 +113,6 @@
   
     .digital-marketing-details-content h1 {
       font-size: 1.75rem;
-    }
-  
-    .digital-marketing-details-content h2 {
-      font-size: 1.25rem;
     }
   
     .digital-marketing-details-content h3 {
