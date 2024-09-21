@@ -224,7 +224,8 @@ li {
 }
 
 .contact {
-  color: #288073;
+  /* color: #288073; */
+  color: #4267b2;
   font-weight: bold;
   text-decoration: underline;
 }
