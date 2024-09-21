@@ -203,31 +203,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* <section>
-        <h2>Why Choose Talvox?</h2>
-        <ul>
-          <li>
-            <strong>Holistic Approach:</strong> We understand that every
-            business is unique, which is why we offer tailored solutions that
-            address your specific needs across IT, HR, and Digital Marketing.
-          </li>
-          <li>
-            <strong>Expert Team:</strong> Our team is composed of seasoned
-            professionals with deep industry knowledge and a passion for
-            innovation.
-          </li>
-          <li>
-            <strong>Customer-Centric:</strong> Your success is our priority.
-            We work closely with you to ensure that our solutions not only meet
-            but exceed your expectations.
-          </li>
-          <li>
-            <strong>Innovation-Driven:</strong> At Talvox, we are constantly
-            exploring new technologies and strategies to stay ahead of industry
-            trends and deliver cutting-edge solutions.
-          </li>
-        </ul>
-      </section> */}
 
       <section id="why-talvox" className="why-talvox-section">
         {/* <h2>Why Choose Talvox?</h2> */}

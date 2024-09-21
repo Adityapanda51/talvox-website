@@ -272,7 +272,9 @@ section {
   .about-us {
     padding: 20px;
   }
-
+  .about-us h2 {
+    font-size: 1.5em;
+  }
   ul {
     padding-left: 15px;
   }
@@ -303,7 +305,7 @@ section {
 
 @media (max-width: 480px) {
   .about-us h2 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .about-us h3 {

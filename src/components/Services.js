@@ -488,7 +488,7 @@ const ServicesPage = () => {
       <div>
         <CubeAnimation />
       </div>
-      <h2>Our Services</h2>
+      <h1>Our Services</h1>
        <div>
         <CubeAnimation />
       </div>

@@ -121,7 +121,7 @@
 
 @media (max-width: 768px) {
     .industries-page-container h1 {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     .industries-page-container p {
@@ -135,7 +135,7 @@
 
 @media (max-width: 480px) {
     .industries-page-container h1 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     .industries-page-container p {

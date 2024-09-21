@@ -21,7 +21,7 @@
   position: relative; 
 } */
 
-.services-page-container h2::after {
+.services-page-container h1::after {
   content: '';
   width: 80px;
   height: 4px;
@@ -53,7 +53,7 @@
   z-index: 10; /* Ensure heading is on top */
 }
 
-h2 {
+h1 {
   font-size: 3rem;
   font-weight: 700;
   color:  #288073;
@@ -152,9 +152,19 @@ h2 {
     flex-direction: column;
     align-items: center;
   }
+
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .service-card h2 {
+    font-size: 1.4rem;
+  }
+  
   
   .service-card {
-    width: 90%;
+    width: 100%;
     max-width: 500px; /* Adjusted max width for larger screens */
   }
 }
