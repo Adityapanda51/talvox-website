@@ -69,7 +69,7 @@ h2 {
 }
 
 .cta-btn {
-  background-color: #25BE97;
+  background-color:  #288073;
   color: black;
   border: none;
   border-radius: 50px;
@@ -82,7 +82,7 @@ h2 {
 }
 
 .cta-btn.secondary {
-  background-color: black;
+  background-color:  black;
   color: white;
 }
 
@@ -93,7 +93,9 @@ h2 {
   left: 50%;
   width: 300%;
   height: 300%;
-  background: rgba(255, 255, 255, 0.3);
+  /* background: rgba(255, 255, 255, 0.3); */
+  background: rgba(40, 128, 115, 0.3);
+
   border-radius: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: transform 0.6s ease;
@@ -343,6 +345,7 @@ h2 {
 
 
 
+
 .about-page-container {
   padding: 40px;
   background-color: #f4f4f9;
@@ -352,8 +355,7 @@ h2 {
 
 .about-page-container h1 {
   font-size: 3rem;
-  color: black;
-  margin-bottom: 20px;
+  color:  #288073;
 }
 
 
@@ -365,13 +367,12 @@ h2 {
   content: '';
   width: 80px;
   height: 4px;
-  background-color: black;
+  background-color:  #288073;
   position: absolute;
   bottom: -10px; /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%);
 }
-
 
 .about-page-container p {
   font-size: 1.2rem;
@@ -442,8 +443,7 @@ h2 {
 /* Headings */
 .about-card h2 {
   font-size: 1.8rem;
-  /* color: #25be97; */
-  color: black;
+  color:  #288073;
   margin-bottom: 10px;
 }
 
@@ -541,7 +541,31 @@ h2 {
   color: black;
 }
 
-#what-we-offer h2 {
+
+
+
+.what-we-offer h1 {
+  font-size: 3rem;
+  color:  #288073;
+}
+
+
+.what-we-offer h1 {
+  position: relative; /* Needed for absolute positioning of the ::after pseudo-element */
+}
+
+.what-we-offer h1::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color:  #288073;
+  position: absolute;
+  bottom: -10px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* #what-we-offer h2 {
   text-align: center;
   font-size: 2.8rem;
   margin-bottom: 60px;
@@ -560,7 +584,7 @@ h2 {
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
 /* Offer container */
 .offer-container {
@@ -615,7 +639,7 @@ h2 {
 
 .card-content h3 {
   font-size: 1.8rem;
-  color: black;
+  color:  #288073;
   margin-bottom: 15px;
 }
 
@@ -665,7 +689,7 @@ h2 {
   margin: 40px 0;
 }
 
-.why-talvox-section h2 {
+/* .why-talvox-section h2 {
   text-align: center;
   font-size: 3rem;
   color: black;
@@ -683,7 +707,33 @@ h2 {
   bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
+} */
+
+
+.why-talvox-section h1 {
+  font-size: 3rem;
+  color:  #288073;
 }
+
+
+.why-talvox-section h1 {
+  position: relative; /* Needed for absolute positioning of the ::after pseudo-element */
+}
+
+.why-talvox-section h1::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color:  #288073;
+  position: absolute;
+  bottom: -10px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+
 
 /* Styling the list */
 .why-talvox-list {

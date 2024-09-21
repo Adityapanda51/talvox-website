@@ -1,9 +1,26 @@
 /* General styles for contact-us section */
-.contact-us {
+/* .contact-us {
   padding: 20px;
   max-width: 1200px;
   margin: auto;
+} */
+
+
+.contact-us h2 {
+  position: relative; 
 }
+
+.contact-us h2::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color:  #288073;
+  position: absolute;
+  bottom: -10px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 .contact-content {
   display: flex;
@@ -22,7 +39,8 @@
 .contact-info, .business-hours {
   flex: 1; /* Ensure both sections take up equal width */
   min-width: 0; /* Prevents overflow on small screens */
-  background-color: #f9f9f9; /* Optional: background color for visual distinction */
+  background-color: #f9f9f9; 
+ 
   padding: 1rem; /* Padding inside the boxes */
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
@@ -30,7 +48,7 @@
 
 .contact-info h2, .business-hours h2 {
   margin-top: 0;
-  color:  black;
+  color:   #288073;
 }
 
 /* Responsive Styles */
@@ -54,7 +72,7 @@
 .contact-form h2 {
   text-align: center;
   margin-bottom: 1rem; /* Space below the heading */
-  color:  black;
+  color:   #288073;
 }
 
 .contact-form form {
@@ -83,7 +101,7 @@
 
 .contact-form button {
   padding: 10px 20px;
-  background-color: black;
+  background-color:  #288073;
   color: white;
   border: none;
   border-radius: 5px;
@@ -92,7 +110,7 @@
 
 
 .contact-form button:hover {
-  background-color: #0056b3;
+  background-color:  blue;
 }
 
 /* Extra Content */
@@ -104,7 +122,7 @@
 .get-in-touch h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color:  black;
+  color:  #288073;
 }
 
 .get-in-touch p {

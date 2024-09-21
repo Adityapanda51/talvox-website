@@ -59,12 +59,12 @@
 } */
 
 .nav-links a:hover {
-  color: #25BE97;
-  border-bottom: 2px solid #25BE97;
+  color: #288073 ;
+  border-bottom: 2px solid #288073 ;
 }
 
 .contact-link {
-  color: #25BE97;
+  color: #288073;
   font-weight: 700;
 }
 

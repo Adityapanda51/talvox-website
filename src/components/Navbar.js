@@ -61,6 +61,7 @@ const CustomNavbar = () => {
                 <a className="nav-link contact-link" href="/contact">Contact Us</a>
               </li>
             </ul>
+           
           </div>
         </div>
       </nav>

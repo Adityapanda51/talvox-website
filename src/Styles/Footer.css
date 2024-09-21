@@ -14,7 +14,7 @@
   flex-wrap: wrap;
   max-width: 1200px;
   width: 100%;
-  padding: 0 20px; /* Consistent padding */
+  padding: 0 20px; 
 }
 
 .footer-section {
@@ -52,28 +52,9 @@
   border-radius: 8px;
   border: none;
   width: 100%;
-  height: 150px; /* Consistent height */
+  height: 150px; 
 }
 
-.social-media ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  padding: 0;
-}
-
-.social-media ul li {
-  margin-bottom: 10px; /* Consistent margin */
-}
-
-.social-media ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-.social-media ul li a:hover {
-  color: blue; 
-}
 
 .footer-bottom {
   text-align: center;
@@ -89,16 +70,14 @@
   margin: 0;
 }
 
-/* Contact Us Section Styling */
+
 .footer-section.contact-us {
-  /* background-color: #1a1a1a;  */
-  /* padding: 15px; */
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Consistent box-shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 .footer-section.contact-us p {
-  margin: 10px 0; /* Consistent margin */
+  margin: 10px 0; 
   color: #ffffff;
 }
 
@@ -108,25 +87,77 @@
   color: #ffffff;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
     align-items: center;
-    padding: 0 10px; /* Consistent padding */
+    padding: 0 10px;
   }
 
   .footer-section {
     margin-bottom: 20px;
-    text-align: center; /* Consistent text alignment */
+    text-align: center; 
+  }
+  .footer-section ul {
+    display: flex; /* Use flexbox for better layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .footer-section ul li {
+    text-align: center; /* Center align text for each list item */
   }
 
   .footer-map iframe {
-    height: 100px; /* Adjusted for responsiveness */
+    height: 100px; 
   }
+
+ 
+
+
 }
 
   
   
   
-  
+.social-media ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.social-media ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.social-media li {
+  display: inline-block;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.social-media ul li a:hover {
+  color: blue;
+}
+
+.social-icon i {
+  font-size: 44px;
+  color: #288073; 
+}
+
+.social-icon.linkedin i { color: #0077b5; }
+.social-icon.twitter i { color: #1da1f2; }
+.social-icon.facebook i { color: #3b5998; }
+.social-icon.instagram i { color: #c13584; }

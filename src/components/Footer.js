@@ -1,5 +1,8 @@
-import React from 'react';
-import '../Styles/Footer.css';
+import React from "react";
+import "../Styles/Footer.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import xIcon from '../assets/twitter.webp'; 
+
 
 const Footer = () => {
   return (
@@ -8,43 +11,109 @@ const Footer = () => {
         <div className="footer-section quick-links">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="about">About Us</a></li>
-            <li><a href="services">Services</a></li>
-            <li><a href="industries">Industries</a></li>
-            <li><a href="contact">Contact Us</a></li>
-            <li><a href="careers">Careers</a></li>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="about">About Us</a>
+            </li>
+            <li>
+              <a href="services">Services</a>
+            </li>
+            <li>
+              <a href="industries">Industries</a>
+            </li>
+            <li>
+              <a href="contact">Contact Us</a>
+            </li>
+            <li>
+              <a href="careers">Careers</a>
+            </li>
           </ul>
         </div>
 
         <div className="footer-section services">
           <h3>Services</h3>
           <ul>
-            <li><a href="it-services">IT Services</a></li>
-            <li><a href="hr-services">HR Services</a></li>
-            <li><a href="digital-marketing">Digital Marketing</a></li>
+            <li>
+              <a href="it-services">IT Services</a>
+            </li>
+            <li>
+              <a href="hr-services">HR Services</a>
+            </li>
+            <li>
+              <a href="digital-marketing">Digital Marketing</a>
+            </li>
           </ul>
         </div>
 
         <div className="footer-section contact-us">
           <h3>Contact Us</h3>
-          <p><strong>Office Address:</strong> Siri Gajjela Towers, Mothi Nagar,<br></br>Vengal Rao Nagar,<br></br>Ameerpet,<br></br>Hyderabad, 500038</p>
-          <p><strong>Phone:</strong> 040-45011686</p>
-          <p><strong>Email:</strong> <a href="mailto:info@talvox.com">hr@talvox.com</a></p>
+          <p>
+            <strong>Office Address:</strong> Siri Gajjela Towers, Mothi Nagar,
+            <br></br>Vengal Rao Nagar,<br></br>Ameerpet,<br></br>Hyderabad,
+            500038
+          </p>
+          <p>
+            <strong>Phone:</strong> 040-45011686
+          </p>
+          <p>
+            <strong>Email:</strong>{" "}
+            <a href="mailto:info@talvox.com">hr@talvox.com</a>
+          </p>
         </div>
-
-  
 
         <div className="footer-section social-media">
           <h3>Follow Us</h3>
           <ul>
-            <li><a href="https://in.linkedin.com/company/talvox-pvt-ltd" target="_blank" rel="noopener noreferrer" className="social-icon linkedin">LinkedIn</a></li>
-            <li><a href="https://twitter.com/talvox" target="_blank" rel="noopener noreferrer" className="social-icon twitter">Twitter</a></li>
-            <li><a href="https://www.facebook.com/talvox" target="_blank" rel="noopener noreferrer" className="social-icon facebook">Facebook</a></li>
+            <li>
+              <a
+                href="https://in.linkedin.com/company/talvox-pvt-ltd"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon linkedin"
+              >
+                <i className="fab fa-linkedin"></i> LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/talvox"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon x-icon"
+              >
+                <img
+                  src={xIcon}
+                  alt="X"
+                  style={{ width: "44px", height: "32px" }}
+                />
+                Twitter
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.facebook.com/talvox"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon facebook"
+              >
+                <i className="fab fa-facebook"></i> Facebook
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/talvoxpvtltd?igsh=bHk1M2tpd2xuem1u"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon instagram"
+              >
+                <i className="fab fa-instagram"></i> Instagram
+              </a>
+            </li>
           </ul>
         </div>
-
-        
 
         <div className="footer-section footer-map">
           <h3>Our Location</h3>
@@ -58,7 +127,6 @@ const Footer = () => {
             loading="lazy"
           ></iframe>
         </div>
-
       </div>
 
       <div className="footer-bottom">
@@ -69,6 +137,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
-

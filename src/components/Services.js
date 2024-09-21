@@ -1,5 +1,3 @@
-
-
 // import React, { useState } from 'react';
 // import '../Styles/Services.css';
 
@@ -167,7 +165,7 @@
 //         At Talvox, we understand that people are the most valuable asset of any organization. Our HR services are designed to help businesses attract, retain, and develop top talent while ensuring compliance and fostering a positive workplace culture. Whether you're a startup or a growing enterprise, our comprehensive HR solutions are tailored to meet your unique needs.
 //       </p>
 //       <h3>Our HR Solutions</h3>
-      
+
 //       <div>
 //         <h4>1. Talent Acquisition</h4>
 //         <p>
@@ -180,7 +178,7 @@
 //           <li>Remote Workforce Recruitment</li>
 //         </ul>
 //       </div>
-      
+
 //       <div>
 //         <h4>2. Onboarding and Offboarding</h4>
 //         <p>
@@ -193,7 +191,7 @@
 //           <li>Knowledge Transfer Support</li>
 //         </ul>
 //       </div>
-      
+
 //       <div>
 //         <h4>3. Performance Management</h4>
 //         <p>
@@ -206,7 +204,7 @@
 //           <li>Employee Development Plans</li>
 //         </ul>
 //       </div>
-      
+
 //       <div>
 //         <h4>4. Employee Engagement and Retention</h4>
 //         <p>
@@ -219,7 +217,7 @@
 //           <li>Work-Life Balance Initiatives</li>
 //         </ul>
 //       </div>
-      
+
 //       <div>
 //         <h4>5. HR Compliance and Policy Management</h4>
 //         <p>
@@ -232,7 +230,7 @@
 //           <li>HR Audits</li>
 //         </ul>
 //       </div>
-      
+
 //       <div>
 //         <h4>6. Learning and Development</h4>
 //         <p>
@@ -245,7 +243,7 @@
 //           <li>Mentorship Programs</li>
 //         </ul>
 //       </div>
-      
+
 //       <div>
 //         <h4>7. Payroll and Benefits Administration</h4>
 //         <p>
@@ -258,7 +256,7 @@
 //           <li>Employee Assistance Programs</li>
 //         </ul>
 //       </div>
-      
+
 //       <h3>Why Choose Talvox?</h3>
 //       <ul className="no-bullets">
 //         <li><strong>Tailored Solutions:</strong> We understand that every company is unique. Our services are customized to meet your specific needs.</li>
@@ -266,7 +264,7 @@
 //         <li><strong>Technology-Driven:</strong> We leverage the latest HR technologies to streamline processes and enhance efficiency.</li>
 //         <li><strong>People-Centric Approach:</strong> We prioritize the well-being and development of your employees, ensuring a motivated and engaged workforce.</li>
 //       </ul>
-      
+
 //       <h3>Get in Touch</h3>
 //       <p>Ready to take your HR to the next level? Contact Talvox today to learn more about our services and how we can help your business succeed.</p>
 //           <button onClick={hideDetails} className="cta-button">Close Details</button>
@@ -347,12 +345,6 @@
 // };
 
 // export default ServicesPage;
-
-
-
-
-
-
 
 // import React, { useState } from 'react';
 // import '../Styles/Services.css';
@@ -436,23 +428,23 @@
 
 // export default ServicesPage;
 
-
-
-import React, { useState } from 'react';
-import '../Styles/Services.css';
+import React, { useState } from "react";
+import "../Styles/Services.css";
 
 // Import images
-import itImage from '../assets/itservice.jpeg';
-import hrImage from '../assets/hrservice.jpeg';
-import digitalMarketingImage from '../assets/digital-marketing.jpeg';
-import ITServices from './ITServices';
-import HRServices from './HRServices'; // Add HRServices component
-import DigitalMarketingServices from './DigitalMarketingServices'; // Add DigitalMarketingServices component
+import itImage from "../assets/itservice.jpeg";
+import hrImage from "../assets/hrservice.jpeg";
+import digitalMarketingImage from "../assets/digital-marketing.jpeg";
+import ITServices from "./ITServices";
+import HRServices from "./HRServices"; // Add HRServices component
+import DigitalMarketingServices from "./DigitalMarketingServices"; // Add DigitalMarketingServices component
+import CubeAnimation from "./CubeAnimation";
 
 const ServicesPage = () => {
   const [showITDetails, setShowITDetails] = useState(false);
   const [showHRDetails, setShowHRDetails] = useState(false); // New state for HR services
-  const [showDigitalMarketingDetails, setShowDigitalMarketingDetails] = useState(false); // New state for Digital Marketing
+  const [showDigitalMarketingDetails, setShowDigitalMarketingDetails] =
+    useState(false); // New state for Digital Marketing
 
   const handleShowITDetails = () => {
     setShowITDetails(true);
@@ -485,14 +477,32 @@ const ServicesPage = () => {
   }
 
   return (
-    <div id='services' className="services-page-container">
-      <h1>Our Services</h1>
+    <div id="services" className="services-page-container">
+      {/* <div className="heading-container">
+        <h1>Our Services</h1>
+        <CubeAnimation />
+      </div> */}
+
+
+      <div className="heading-container">
+      <div>
+        <CubeAnimation />
+      </div>
+      <h2>Our Services</h2>
+       <div>
+        <CubeAnimation />
+      </div>
+      </div>
+
       <p>
-        At Talvox, we provide a comprehensive suite of services designed to help businesses thrive in today’s competitive landscape. Whether you need cutting-edge IT solutions, strategic HR support, or dynamic digital marketing strategies, we’ve got you covered.
+        At Talvox, we provide a comprehensive suite of services designed to help
+        businesses thrive in today’s competitive landscape. Whether you need
+        cutting-edge IT solutions, strategic HR support, or dynamic digital
+        marketing strategies, we’ve got you covered.
       </p>
       <div className="services-grid">
         {/* IT Services Card */}
-        <div id='it-services' className="service-card">
+        <div id="it-services" className="service-card">
           <div className="service-image">
             <img src={itImage} alt="IT Services" />
           </div>
@@ -501,13 +511,19 @@ const ServicesPage = () => {
             <p className="service-tagline">"Innovate with Confidence"</p>
           </div>
           <p className="service-description">
-            From cutting-edge software development to robust IT infrastructure management, Talvox empowers your business with the technology it needs to stay ahead in a competitive market. Our IT experts are dedicated to creating solutions that are not only innovative but also scalable and secure.
+            From cutting-edge software development to robust IT infrastructure
+            management, Talvox empowers your business with the technology it
+            needs to stay ahead in a competitive market. Our IT experts are
+            dedicated to creating solutions that are not only innovative but
+            also scalable and secure.
           </p>
-          <button onClick={handleShowITDetails} className="cta-button btn1">Learn More About IT Services</button>
+          <button onClick={handleShowITDetails} className="cta-button btn1">
+            Learn More About IT Services
+          </button>
         </div>
 
         {/* HR Services Card */}
-        <div id='hr-services' className="service-card">
+        <div id="hr-services" className="service-card">
           <div className="service-image">
             <img src={hrImage} alt="HR Services" />
           </div>
@@ -516,13 +532,19 @@ const ServicesPage = () => {
             <p className="service-tagline">"Your Talent, Our Priority"</p>
           </div>
           <p className="service-description">
-            People are at the heart of every successful business. Talvox provides end-to-end HR services that ensure you attract, retain, and develop the best talent. Whether you need recruitment support, onboarding assistance, or HR management, our team is here to make sure your human resources are aligned with your business goals.
+            People are at the heart of every successful business. Talvox
+            provides end-to-end HR services that ensure you attract, retain, and
+            develop the best talent. Whether you need recruitment support,
+            onboarding assistance, or HR management, our team is here to make
+            sure your human resources are aligned with your business goals.
           </p>
-          <button onClick={handleShowHRDetails} className="cta-button btn2">Explore HR Solutions</button>
+          <button onClick={handleShowHRDetails} className="cta-button btn2">
+            Explore HR Solutions
+          </button>
         </div>
 
         {/* Digital Marketing Services Card */}
-        <div id='digital-marketing' className="service-card">
+        <div id="digital-marketing" className="service-card">
           <div className="service-image">
             <img src={digitalMarketingImage} alt="Digital Marketing Services" />
           </div>
@@ -531,9 +553,18 @@ const ServicesPage = () => {
             <p className="service-tagline">"Amplify Your Brand"</p>
           </div>
           <p className="service-description">
-            In the digital age, visibility is key. Our Digital Marketing services are designed to enhance your online presence and connect you with your target audience. From SEO and social media management to content marketing and PPC campaigns, Talvox crafts strategies that deliver measurable results.
+            In the digital age, visibility is key. Our Digital Marketing
+            services are designed to enhance your online presence and connect
+            you with your target audience. From SEO and social media management
+            to content marketing and PPC campaigns, Talvox crafts strategies
+            that deliver measurable results.
           </p>
-          <button onClick={handleShowDigitalMarketingDetails} className="cta-button btn3">Discover Digital Marketing</button>
+          <button
+            onClick={handleShowDigitalMarketingDetails}
+            className="cta-button btn3"
+          >
+            Discover Digital Marketing
+          </button>
         </div>
       </div>
     </div>

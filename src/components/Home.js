@@ -16,6 +16,7 @@ import itImage from "../assets/it2.jpg";
 import hrImage from "../assets/hr2.jpeg";
 import digitalmarketingImage from "../assets/digitalmarketing2.webp";
 import Industries from "./Industries";
+import CubeAnimation from "./CubeAnimation";
 
 const aboutUsData = [
   {
@@ -98,7 +99,17 @@ const Home = () => {
       </section>
 
       <section id="about-us" className="about-page-container">
-        <h1>About Us</h1>
+        {/* <h1>About Us</h1> */}
+
+        <div className="heading-container">
+        <div>
+        <CubeAnimation />
+      </div>
+          <h1>About Us</h1>
+          <div>
+            <CubeAnimation />
+          </div>
+        </div>
         <p>
           At Talvox, we are more than just a service provider; we are your
           strategic partner in navigating the complexities of today’s business
@@ -131,7 +142,17 @@ const Home = () => {
       </section>
 
       <section id="what-we-offer" className="what-we-offer">
-        <h2>What We Offer</h2>
+        {/* <h2>What We Offer</h2> */}
+
+        <div className="heading-container">
+        <div>
+        <CubeAnimation />
+      </div>
+          <h1>What We Offer</h1>
+          <div>
+            <CubeAnimation />
+          </div>
+        </div>
         <div className="offer-container">
           <div className="offer-card">
             <div className="card-image">
@@ -209,7 +230,18 @@ const Home = () => {
       </section> */}
 
       <section id="why-talvox" className="why-talvox-section">
-        <h2>Why Choose Talvox?</h2>
+        {/* <h2>Why Choose Talvox?</h2> */}
+
+
+        <div className="heading-container">
+        <div>
+        <CubeAnimation />
+      </div>
+        <h1>Why Choose Talvox?</h1>
+          <div>
+            <CubeAnimation />
+          </div>
+        </div>
         <ul className="why-talvox-list">
           <li>
             <strong>Holistic Approach:</strong> We understand that every

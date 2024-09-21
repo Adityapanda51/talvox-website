@@ -11,6 +11,7 @@ import manufacturingImage from '../assets/manufacturing.webp';
 import realEstateImage from '../assets/realestate.jpg';
 import energyImage from '../assets/energy.jpeg';
 import travelImage from '../assets/travel.jpg';
+import CubeAnimation from './CubeAnimation';
 
 const industriesData = [
   {
@@ -63,7 +64,20 @@ const industriesData = [
 const Industries = () => {
   return (
     <div id='industries' className="industries-page-container">
+        {/* <div className="heading-container">
+        <h1>Industries We Serve</h1>
+        <CubeAnimation />
+      </div> */}
+
+      <div className="heading-container">
+      <div>
+        <CubeAnimation />
+      </div>
       <h1>Industries We Serve</h1>
+       <div>
+        <CubeAnimation />
+      </div>
+      </div>
       <p>
         At Talvox, we pride ourselves on delivering innovative IT, HR, and Digital Marketing solutions...
       </p>

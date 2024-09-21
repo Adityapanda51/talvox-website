@@ -1,5 +1,4 @@
-/* src/Styles/WhyTalvox.css */
-.why-talvox {
+/* .why-talvox {
     padding: 40px 20px;
     background-color: #f9f9f9;
     text-align: center;
@@ -11,10 +10,8 @@
     color: black;
   }
 
-
-
   .why-talvox h2 {
-    position: relative; /* Needed for absolute positioning of the ::after pseudo-element */
+    position: relative; 
   }
   
   .why-talvox h2::after {
@@ -23,12 +20,10 @@
     height: 4px;
     background-color: black;
     position: absolute;
-    bottom: -10px; /* Adjust as needed */
+    bottom: -10px; 
     left: 50%;
     transform: translateX(-50%);
   }
-
-
 
   
   .why-talvox ul {
@@ -44,7 +39,333 @@
   
   .why-talvox p {
     font-size: 1.2rem;
-    /* color: rgb(81, 57, 57); */
     color: black;
   }
+  
+
+
+  .heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    margin-bottom: 20px;
+  } */
+
+
+
+
+
+
+/* General Styles for WhyTalvox Section */
+.why-talvox {
+  position: relative;
+  padding: 50px 20px;
+  background: radial-gradient(circle, #f9f9f9 0%, #e5e5e5 100%);
+  min-height: 100vh;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden; /* Ensure cube animation doesn't overflow */
+}
+
+.heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centering the content */
+  gap: 20px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 10; /* Ensure heading is on top */
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color:  #288073;
+  margin: 0; /* Ensure no margin is affecting centering */
+  text-align: center; /* Center text inside h2 */
+}
+
+.why-talvox h2 {
+  position: relative; 
+}
+
+.why-talvox h2::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color:  #288073;
+  position: absolute;
+  bottom: -10px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+/* Responsive and Text Styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-talvox ul li {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+li strong {
+  color: black;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: black;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+  .cube-background {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+
+
+
+/* 
+   .why-talvox-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 100px;
+    background: linear-gradient(135deg, #f4f7fa, #e0f7f1);
+    color: black;
+  }
+  
+  .why-talvox-content {
+    flex: 1;
+    margin-right: 40px;
+  }
+  
+  .why-talvox-content h2 {
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 30px;
+  }
+  
+  .why-talvox-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .why-talvox-list li {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: black;
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .why-talvox-list li::before {
+    content: '✔';
+    color: #25BE97;
+    position: absolute;
+    left: 0;
+  }
+  
+  .cta {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .contact-highlight {
+    color: #25BE97;
+  }
+  
+  .why-talvox-3d {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+  }
+  
+  .cube {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    animation: rotateCube 10s linear infinite;
+  }
+  
+  .face {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8rem;
+    color: #25BE97;
+    background: linear-gradient(135deg, #000, #434343);
+    border: 2px solid #25BE97;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+  }
+  
+  .front  { transform: translateZ(125px); }
+  .back   { transform: rotateY(180deg) translateZ(125px); }
+  .left   { transform: rotateY(-90deg) translateZ(125px); }
+  .right  { transform: rotateY(90deg) translateZ(125px); }
+  .top    { transform: rotateX(90deg) translateZ(125px); }
+  .bottom { transform: rotateX(-90deg) translateZ(125px); }
+  
+  @keyframes rotateCube {
+    0% { transform: rotateX(0deg) rotateY(0deg); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+  }
+  
+  @media (max-width: 768px) {
+    .why-talvox-container {
+      flex-direction: column;
+      padding: 30px 20px;
+    }
+  
+    .why-talvox-content {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+  } 
+   */
+
+
+
+
+
+
+
+
+
+/* 
+   .why-talvox {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    position: relative;
+  }
+  
+  .why-talvox h2 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: black;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+  }
+  
+  .why-talvox h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .cube-container {
+    display: inline-block;
+    width: 50px; 
+    height: 50px;
+    position: relative;
+    perspective: 1000px;
+    vertical-align: middle;
+    margin-left: 20px; 
+  }
+  
+  .cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    animation: rotate3D 5s infinite linear;
+  }
+  
+  @keyframes rotate3D {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+      transform: rotateX(180deg) rotateY(180deg);
+    }
+    100% {
+      transform: rotateX(360deg) rotateY(360deg);
+    }
+  }
+  
+  .cube-face {
+    position: absolute;
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem; 
+    color:  black;
+    background-color:  #25BE97;
+    opacity: 0.8;
+    border: 2px solid #f9f9f9;
+  }
+  
+  .front  { transform: translateZ(25px); }
+  .back   { transform: rotateY(180deg) translateZ(25px); }
+  .left   { transform: rotateY(-90deg) translateZ(25px); }
+  .right  { transform: rotateY(90deg) translateZ(25px); }
+  .top    { transform: rotateX(90deg) translateZ(25px); }
+  .bottom { transform: rotateX(-90deg) translateZ(25px); } */
   
