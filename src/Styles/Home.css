@@ -513,7 +513,7 @@ h2 {
   }
 
   .offer-card {
-    max-width: 100%; /* Full width on smaller screens */
+    max-width: 100%; 
   }
 }
 
@@ -532,6 +532,9 @@ h2 {
 
   .card-content p {
     font-size: 0.9rem;
+  }
+  .offer-card {
+    max-width: 100%; 
   }
 }
 

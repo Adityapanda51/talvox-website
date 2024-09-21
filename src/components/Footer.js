@@ -56,13 +56,11 @@ const Footer = () => {
           <p>
             <strong>Phone:</strong> <a href="tel:04045011686">040-45011686</a>
           </p>
-
           <p>
             <strong>Email:</strong>{" "}
             <a href="mailto:info@talvox.com">hr@talvox.com</a>
           </p>
         </div>
-
         <div className="footer-section social-media">
           <h3>Follow Us</h3>
           <ul>
