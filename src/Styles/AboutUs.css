@@ -275,8 +275,12 @@ section {
   .about-us h2 {
     font-size: 1.5em;
   }
-  ul {
+  /* ul {
     padding-left: 15px;
+  } */
+
+  p, ul, li {
+    font-size: 1em;
   }
 
   .service {
@@ -323,3 +327,57 @@ section {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  justify-content: space-between; /* Distribute space between cards */
+  /* gap: 1.5rem;  */
+}
+
+.card {
+  flex: 1 1 300px; /* Allow cards to grow and shrink with a base width of 300px */
+  background-color: #f9f9f9; /* Background color for cards */
+  border-radius: 8px; /* Rounded corners */
+  /* padding: 1.5rem; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Raise card on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column; /* Stack cards vertically on small screens */
+  }
+
+  .card {
+    margin-bottom: 1rem; /* Space between stacked cards */
+  }
+}
+
+
+.card h3 {
+  margin-top: 1rem; /* Adjust based on your design */
+  margin-bottom: 0.5rem; /* Reduce space below heading */
+  color: #288073; /* Your heading color */
+}
+
+.card p, .card ul {
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: 0; /* Set a consistent bottom margin */
+  padding: 0; /* Remove padding if any */
+}
