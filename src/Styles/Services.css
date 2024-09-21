@@ -101,7 +101,7 @@ h1 {
   font-style: italic ;
   font-weight: 1000;
   color: #555;
-  margin: 0.5rem 0;
+  margin: 0rem 0;
   display: flex;
   justify-content: center;
 }
@@ -110,6 +110,8 @@ h1 {
   padding: 0 1rem 1rem;
   font-size: 1rem;
   color: black;
+  margin-top: 0; 
+  margin-bottom: 0; 
 }
 
 .cta-button {
@@ -176,3 +178,4 @@ h1 {
 }
   
   
+

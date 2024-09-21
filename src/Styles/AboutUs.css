@@ -226,6 +226,16 @@ section {
   gap: 20px;
 }
 
+/* .what-we-do h3 {
+  padding-bottom: 0;
+} */
+.what-we-do p {
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 .service {
   display: flex;
   align-items: center;
@@ -275,9 +285,7 @@ section {
   .about-us h2 {
     font-size: 1.5em;
   }
-  /* ul {
-    padding-left: 15px;
-  } */
+ 
 
   p, ul, li {
     font-size: 1em;
