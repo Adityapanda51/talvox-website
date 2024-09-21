@@ -126,7 +126,7 @@ const Careers = () => {
           <p>
             Questions? Contact us at{" "}
             <strong className="contact"> <a href="mailto:praveenkambampati1@gmail.com">praveenkambampati1@gmail.com</a></strong> or{" "}
-            <strong className="contact">+919959002091</strong>.
+            <strong className="contact"> <a href="tel:+919959002091">+919959002091</a></strong>.
           </p>
         </div>
 

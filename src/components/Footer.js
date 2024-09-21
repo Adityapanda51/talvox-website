@@ -1,8 +1,7 @@
 import React from "react";
 import "../Styles/Footer.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import xIcon from '../assets/twitter.webp'; 
-
+import xIcon from "../assets/twitter.webp";
 
 const Footer = () => {
   return (
@@ -55,8 +54,9 @@ const Footer = () => {
             500038
           </p>
           <p>
-            <strong>Phone:</strong> 040-45011686
+            <strong>Phone:</strong> <a href="tel:04045011686">040-45011686</a>
           </p>
+
           <p>
             <strong>Email:</strong>{" "}
             <a href="mailto:info@talvox.com">hr@talvox.com</a>
