@@ -22,3 +22,19 @@
     margin: 0;
   }
   
+
+
+  /* Responsive Styles */
+@media (max-width: 768px) {
+    .whatsapp-button {
+        padding: 5px 10px;  /* Smaller padding for mobile */
+      font-size: 20px; /* Smaller icon size for mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .whatsapp-button {
+        padding: 5px 10px;  /* Even smaller padding for smaller screens */
+      font-size: 16px; /* Further reduced icon size */
+    }
+  }
