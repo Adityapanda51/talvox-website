@@ -478,11 +478,6 @@ const ServicesPage = () => {
 
   return (
     <div id="services" className="services-page-container">
-      {/* <div className="heading-container">
-        <h1>Our Services</h1>
-        <CubeAnimation />
-      </div> */}
-
 
       <div className="heading-container">
       <div>
@@ -493,8 +488,7 @@ const ServicesPage = () => {
         <CubeAnimation />
       </div>
       </div>
-
-      <p>
+      <p> 
         At Talvox, we provide a comprehensive suite of services designed to help
         businesses thrive in today’s competitive landscape. Whether you need
         cutting-edge IT solutions, strategic HR support, or dynamic digital
