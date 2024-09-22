@@ -266,3 +266,19 @@ li {
 }
 
 
+
+.card.stay-connected a .fa-linkedin {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+.card.stay-connected a .fa-x {
+  color: black; /* Twitter/X black */
+}
+
+.card.stay-connected a .fa-facebook {
+  color:  #3b5998; /* Facebook blue */
+}
+
+.card.stay-connected a .fa-instagram {
+  color: #c13584; /* Instagram pink */
+}

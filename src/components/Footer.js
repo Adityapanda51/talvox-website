@@ -71,7 +71,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="social-icon linkedin"
               >
-                <i className="fab fa-linkedin"></i> LinkedIn
+                <i className="fab fa-linkedin"></i>
               </a>
             </li>
             <li>
@@ -86,7 +86,7 @@ const Footer = () => {
                   alt="X"
                   style={{ width: "44px", height: "32px" }}
                 />
-                Twitter
+              
               </a>
             </li>
 
@@ -97,7 +97,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="social-icon facebook"
               >
-                <i className="fab fa-facebook"></i> Facebook
+                <i className="fab fa-facebook"></i> 
               </a>
             </li>
             <li>
@@ -107,7 +107,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="social-icon instagram"
               >
-                <i className="fab fa-instagram"></i> Instagram
+                <i className="fab fa-instagram"></i>
               </a>
             </li>
           </ul>
