@@ -2,20 +2,20 @@
     position: fixed;
     bottom: 20px; /* Position from the bottom */
     right: 20px; /* Position from the right */
-    background-color: #25D366; /* WhatsApp green */
+    background-color: #128C7E; 
     color: white;
-    border-radius: 50%; /* Circular shape */
-    padding: 15px; /* Space inside the button */
+    border-radius: 100%; 
+    padding: 8px 18px; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
     text-align: center;
-    font-size: 24px; /* Icon size */
+    font-size: 34px; /* Icon size */
     z-index: 1000; /* Ensure it's on top */
     transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
   }
   
   .whatsapp-button:hover {
-    background-color: #128C7E; /* Darker green on hover */
-    transform: scale(1.1); /* Slightly grow on hover */
+    background-color: #128C7E; 
+    transform: scale(1.1); 
   }
   
   .whatsapp-button i {
