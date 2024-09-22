@@ -5,7 +5,7 @@
     background-color: #128C7E; 
     color: white;
     border-radius: 100%; 
-    padding: 8px 18px; 
+    padding: 10px 18px; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
     text-align: center;
     font-size: 34px; /* Icon size */
@@ -27,14 +27,14 @@
   /* Responsive Styles */
 @media (max-width: 768px) {
     .whatsapp-button {
-        padding: 5px 10px;  /* Smaller padding for mobile */
-      font-size: 26px; /* Smaller icon size for mobile */
+        padding: 5px 10px; 
+      font-size: 32px; /* Smaller icon size for mobile */
     }
   }
   
   @media (max-width: 480px) {
     .whatsapp-button {
-        padding: 5px 10px;  /* Even smaller padding for smaller screens */
-      font-size: 20px; /* Further reduced icon size */
+        padding: 4px 12px; 
+      font-size: 30px; /* Further reduced icon size */
     }
   }
