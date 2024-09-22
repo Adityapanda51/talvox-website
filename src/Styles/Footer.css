@@ -217,5 +217,26 @@
   .footer-section.social-media ul {
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
     gap: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .footer-section.social-media ul {
+    flex-wrap: wrap; 
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 468px) {
+  .footer-section.social-media ul {
+    flex-wrap: wrap; 
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
   }
 }
