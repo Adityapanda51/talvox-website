@@ -6,9 +6,12 @@
   align-items: center;
   justify-content: flex-start; /* Aligns content horizontally to the left */
   overflow: hidden;
-  background: url('../assets/home-background.png') no-repeat center center/cover; /* Full-screen background image */
+  background: url('../assets/hero-image.jpg') no-repeat center center; /* Full-screen background image */
+  background-size: cover;
+  background-position: center;
   border-radius: 0%;
   padding-left: 5rem; /* Add padding to move content away from the left edge */
+  padding-top: 5rem;
 }
 
 a {
@@ -54,10 +57,10 @@ h2 {
 }
 
 .hero-content p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
-  font-weight: 600;
-  color: black;
+  font-weight: 700;
+  color:  #288073;
   animation: scaleUp 1s ease-out forwards;
   animation-delay: 0.6s;
 }
@@ -143,11 +146,15 @@ h2 {
     font-size: 2.5rem;
     align-items: flex-start;
     width: 50%;
+    margin-top: 6rem;
+    margin-top: 6rem;
   }
 
   .hero-content p {
     font-size: 1.3rem;
     width: auto;
+    margin-bottom: 0;
+    padding-bottom: 10px;
   }
   .cta-buttons {
     flex-direction: column;
@@ -157,10 +164,11 @@ h2 {
 
 @media (max-width: 768px) {
   .home-section {
-    height: 85vh;
+    height: 80vh;
     justify-content: flex-start;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-left: 1.5rem; /* Further reduce left padding for mobile screens */
+    
   }
 
   .hero-content {
@@ -194,12 +202,14 @@ h2 {
 @media (max-width: 480px) {
   .home-section {
     height: 80vh;
-    padding-top: 30px;
+    padding-top: 2rem;
+    padding-left: 1rem;
   }
 
   .hero-content h1 {
     font-size: 1.8rem;
     width: 50%;
+    padding-left: 2.5rem;
   }
 
   .hero-content p {
@@ -367,6 +377,9 @@ h2 {
 
   h3 {
     font-size: 1.5rem; /* Make h3 smaller */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
   }
 
@@ -416,6 +429,9 @@ h2 {
 
   h3 {
     font-size: 1.3rem; /* Further reduce h3 size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

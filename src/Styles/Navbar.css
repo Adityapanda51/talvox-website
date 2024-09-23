@@ -105,6 +105,10 @@
     display: flex; /* Show hamburger icon only on smaller screens */
   }
 
+
+
+
+
   .nav-links {
     display: none;
     flex-direction: column;
