@@ -80,6 +80,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon x-icon"
+                onClick={(e) => e.preventDefault()} // Prevent click action
               >
                 <img
                   src={xIcon}
@@ -96,6 +97,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon facebook"
+                onClick={(e) => e.preventDefault()} // Prevent click action
               >
                 <i className="fab fa-facebook"></i> 
               </a>

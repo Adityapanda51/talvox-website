@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../Styles/ContactUs.css";
-import CubeAnimation from "./CubeAnimation";
+// import CubeAnimation from "./CubeAnimation";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -54,13 +54,13 @@ const ContactUs = () => {
         <div className="contact-business">
           <div className="contact-info">
             <div className="heading-container">
-              <div>
+              {/* <div>
                 <CubeAnimation />
-              </div>
+              </div> */}
               <h2>Contact Information</h2>
-              <div>
+              {/* <div>
                 <CubeAnimation />
-              </div>
+              </div> */}
             </div>
             {/* <h2>Contact Information</h2> */}
             <p>
@@ -74,22 +74,22 @@ const ContactUs = () => {
               <strong>Email:</strong>
             </p>
             <ul>
-              <li>For IT Services: it@example.com</li>
+              <li>For IT Services: hr@talvox.com</li>
               <li>For HR Services: hr@talvox.com</li>
-              <li>General Inquiries: info@example.com</li>
+              <li>General Inquiries: hr@talvox.com</li>
             </ul>
           </div>
 
           <div className="business-hours">
             {/* <h2>Business Hours</h2> */}
             <div className="heading-container">
-              <div>
+              {/* <div>
                 <CubeAnimation />
-              </div>
+              </div> */}
               <h2>Business Hours</h2>
-              <div>
+              {/* <div>
                 <CubeAnimation />
-              </div>
+              </div> */}
             </div>
             <p>Monday - Friday: 9:30 AM - 6:30 PM</p>
             <p>Saturday - Sunday: Closed</p>
@@ -100,13 +100,13 @@ const ContactUs = () => {
         <div className="contact-form">
           {/* <h2>Contact Us</h2> */}
           <div className="heading-container">
-              <div>
+              {/* <div>
                 <CubeAnimation />
-              </div>
+              </div> */}
               <h2>Contact Us</h2>
-              <div>
+              {/* <div>
                 <CubeAnimation />
-              </div>
+              </div> */}
             </div>
           <form onSubmit={handleSubmit}>
             <label htmlFor="name">Name:</label>

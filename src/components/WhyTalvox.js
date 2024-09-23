@@ -77,20 +77,20 @@
 
 import React from "react";
 import "../Styles/WhyTalvox.css";
-import CubeAnimation from "./CubeAnimation";  // Import cube component
+// import CubeAnimation from "./CubeAnimation";  
 
 const WhyTalvox = () => {
   return (
     <section id="why-talvox" className="why-talvox">
      
       <div className="heading-container">
-      <div>
+      {/* <div>
         <CubeAnimation />
-      </div>
+      </div> */}
         <h2>Why Choose Talvox?</h2>
-       <div>
+       {/* <div>
         <CubeAnimation />
-      </div>
+      </div> */}
       </div>
 
       <ul>

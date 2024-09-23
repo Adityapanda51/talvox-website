@@ -3,20 +3,20 @@ import "../Styles/AboutUs.css";
 import itImage from "../assets/it.jpg";
 import hrImage from "../assets/hr.png";
 import digitalMarketingImage from "../assets/digitalmarketing.png";
-import CubeAnimation from "./CubeAnimation";
+// import CubeAnimation from "./CubeAnimation";
 
 const AboutUs = () => {
   return (
     <div id="about" className="about-us">
       <section className="who-we-are">
         <div className="heading-container">
-          <div>
+          {/* <div>
             <CubeAnimation />
-          </div>
+          </div> */}
           <h2>Who We Are</h2>
-          <div>
+          {/* <div>
             <CubeAnimation />
-          </div>
+          </div> */}
         </div>
         <h4>Welcome to Talvox, where innovation meets excellence.</h4>
         <p>

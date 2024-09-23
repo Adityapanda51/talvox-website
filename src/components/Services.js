@@ -438,7 +438,7 @@ import digitalMarketingImage from "../assets/digital-marketing.jpeg";
 import ITServices from "./ITServices";
 import HRServices from "./HRServices"; // Add HRServices component
 import DigitalMarketingServices from "./DigitalMarketingServices"; // Add DigitalMarketingServices component
-import CubeAnimation from "./CubeAnimation";
+// import CubeAnimation from "./CubeAnimation";
 
 const ServicesPage = () => {
   const [showITDetails, setShowITDetails] = useState(false);
@@ -480,13 +480,13 @@ const ServicesPage = () => {
     <div id="services" className="services-page-container">
 
       <div className="heading-container">
-      <div>
+      {/* <div>
         <CubeAnimation />
-      </div>
+      </div> */}
       <h1>Our Services</h1>
-       <div>
+       {/* <div>
         <CubeAnimation />
-      </div>
+      </div> */}
       </div>
       <p> 
         At Talvox, we provide a comprehensive suite of services designed to help

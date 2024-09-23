@@ -5,15 +5,19 @@ const CubeAnimation = () => {
   return (
     <div className="cube-container">
       <div className="cube">
-        <div className="cube-face front">T</div>
-        <div className="cube-face back">A</div>
-        <div className="cube-face left">L</div>
-        <div className="cube-face right">V</div>
-        <div className="cube-face top">O</div>
-        <div className="cube-face bottom">X</div>
+        <div className="cube-face front">Talvox</div>
+        <div className="cube-face back">Talvox</div>
+        <div className="cube-face left">Talvox</div>
+        <div className="cube-face right">Talvox</div>
+        <div className="cube-face top">Talvox</div>
+        <div className="cube-face bottom">Talvox</div>
       </div>
     </div>
   );
 };
 
 export default CubeAnimation;
+
+
+
+
