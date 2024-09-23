@@ -20,7 +20,8 @@
   padding: 0 10px; /* Add some padding to ensure content doesn't touch edges */
 }
 .nav-item {
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 22px;
   color: black;
 }
 
