@@ -2,7 +2,7 @@ import React from 'react';
 import '../Styles/WhatsAppChatButton.css'; 
 
 const WhatsAppChatButton = () => {
-  const phoneNumber = '+919959002091'; // Replace with your WhatsApp number in international format
+  const phoneNumber = '+919705412029'; // Replace with your WhatsApp number in international format
   const message = 'Hello, I would like to chat!'; // Your predefined message
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

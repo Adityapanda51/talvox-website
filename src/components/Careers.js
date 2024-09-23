@@ -1,18 +1,18 @@
 import React from "react";
 import "../Styles/Careers.css";
-import CubeAnimation from "./CubeAnimation";
+// import CubeAnimation from "./CubeAnimation";
 
 const Careers = () => {
   return (
     <section id="careers" className="careers">
       <div className="heading-container">
-        <div>
+        {/* <div>
           <CubeAnimation />
-        </div>
+        </div> */}
         <h1>Join Our Team at Talvox</h1>
-        <div>
+        {/* <div>
           <CubeAnimation />
-        </div>
+        </div> */}
       </div>
       <p className="intro">Empowering Innovation, Enabling Growth</p>
       <p className="description">
