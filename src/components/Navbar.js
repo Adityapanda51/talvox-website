@@ -1,13 +1,91 @@
 
 
 
+// import React, { useState } from 'react';
+// import logo from '../assets/logo1.png'; // Adjust the path if needed
+// import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+// import '../Styles/Navbar.css'; // Custom styles if needed
+
+// const CustomNavbar = () => {
+//   const [isNavOpen, setIsNavOpen] = useState(false);
+
+//   const toggleNav = () => {
+//     setIsNavOpen(!isNavOpen);
+//   };
+
+//   return (
+//     <header className="navbar-container">
+//       <nav className="navbar navbar-expand-lg navbar-light bg-light">
+//         <div className="container-fluid">
+//           {/* Logo Section */}
+//           <a className="navbar-brand" href="/">
+//             <img src={logo} alt="Logo" className="logo" />
+//           </a>
+
+//           {/* Hamburger Toggle Button */}
+//           <button
+//             className="navbar-toggler"
+//             type="button"
+//             onClick={toggleNav}
+//             aria-controls="navbarNav"
+//             aria-expanded={isNavOpen ? 'true' : 'false'}
+//             aria-label="Toggle navigation"
+//           >
+//             <span className="navbar-toggler-icon"></span>
+//           </button>
+
+//           {/* Navbar Links */}
+//           <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`} id="navbarNav">
+//             <ul className="navbar-nav">
+//               <li className="nav-item">
+//                 <a className="nav-link" href="/">Home</a>
+//               </li>
+//               <li className="nav-item">
+//                 <a className="nav-link" href="/about">About Us</a>
+//               </li>
+//               <li className="nav-item">
+//                 <a className="nav-link" href="/services">Services</a>
+//               </li>
+//               <li className="nav-item">
+//                 <a className="nav-link" href="/industries">Industries</a>
+//               </li>
+//               <li className="nav-item">
+//                 <a className="nav-link" href="/why-talvox">Why Talvox</a>
+//               </li>
+//               <li className="nav-item">
+//                 <a className="nav-link" href="/careers">Careers</a>
+//               </li>
+//             </ul>
+//             <ul className="navbar-nav navbar-contact">
+//               <li className="nav-item">
+//                 <a className="nav-link contact-link" href="/contact">Contact Us</a>
+//               </li>
+//             </ul>
+           
+//           </div>
+//         </div>
+//       </nav>
+//     </header>
+//   );
+// };
+
+// export default CustomNavbar;
+
+
+
+
+
+
+
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom'; // Import Link and useLocation
 import logo from '../assets/logo1.png'; // Adjust the path if needed
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import '../Styles/Navbar.css'; // Custom styles if needed
 
 const CustomNavbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const location = useLocation(); // Get the current location
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -18,9 +96,9 @@ const CustomNavbar = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           {/* Logo Section */}
-          <a className="navbar-brand" href="/">
+          <Link className="navbar-brand" to="/">
             <img src={logo} alt="Logo" className="logo" />
-          </a>
+          </Link>
 
           {/* Hamburger Toggle Button */}
           <button
@@ -38,30 +116,43 @@ const CustomNavbar = () => {
           <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`} id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" href="/">Home</a>
+                <Link className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} to="/" onClick={() => setIsNavOpen(false)}>
+                  Home
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/about">About Us</a>
+                <Link className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`} to="/about" onClick={() => setIsNavOpen(false)}>
+                  About Us
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/services">Services</a>
+                <Link className={`nav-link ${location.pathname === '/services' ? 'active' : ''}`} to="/services" onClick={() => setIsNavOpen(false)}>
+                  Services
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/industries">Industries</a>
+                <Link className={`nav-link ${location.pathname === '/industries' ? 'active' : ''}`} to="/industries" onClick={() => setIsNavOpen(false)}>
+                  Industries
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/why-talvox">Why Talvox</a>
+                <Link className={`nav-link ${location.pathname === '/why-talvox' ? 'active' : ''}`} to="/why-talvox" onClick={() => setIsNavOpen(false)}>
+                  Why Talvox
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/careers">Careers</a>
+                <Link className={`nav-link ${location.pathname === '/careers' ? 'active' : ''}`} to="/careers" onClick={() => setIsNavOpen(false)}>
+                  Careers
+                </Link>
               </li>
             </ul>
             <ul className="navbar-nav navbar-contact">
               <li className="nav-item">
-                <a className="nav-link contact-link" href="/contact">Contact Us</a>
+                <Link className={`nav-link contact-link ${location.pathname === '/contact' ? 'active' : ''}`} to="/contact" onClick={() => setIsNavOpen(false)}>
+                  Contact Us
+                </Link>
               </li>
             </ul>
-           
           </div>
         </div>
       </nav>

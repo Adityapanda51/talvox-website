@@ -321,3 +321,55 @@
     font-size: 1rem;
   }
 }
+
+
+
+
+
+
+
+.nav-link {
+  position: relative; /* Allow positioning of the pseudo-element */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.nav-link.active {
+  color: #288073; /* Active color */
+  font-weight: bold; /* Make it bold */
+}
+
+
+
+/* Pseudo-element for the underline effect */
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px; /* Adjust position */
+  height: 3px; /* Thickness of the underline */
+  background-color: #288073; /* Underline color */
+  transition: transform 0.3s ease; /* Smooth underline animation */
+  transform: scaleX(1); /* Full width */
+}
+
+/* Add hover effect */
+.nav-link:hover {
+  color: #1e5d56; /* Darker shade on hover */
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1); /* Ensure underline is visible on hover */
+}
+
+
+
+
+
+
+/* Navbar Toggle (Hamburger Icon) */
+.navbar-toggler {
+  border-color: #288073; /* Optional: remove border */
+}
+
+
