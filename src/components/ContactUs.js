@@ -50,7 +50,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div id="contact" className="contact-us">
+    <div id="contact" className="contact-uss">
       <div className="contact-content">
         {/* Contact Information and Business Hours */}
         <div className="contact-business">

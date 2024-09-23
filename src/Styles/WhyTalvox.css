@@ -3,7 +3,8 @@
 .why-talvox {
   position: relative;
   padding: 50px 20px;
-  background: radial-gradient(circle, #f9f9f9 0%, #e5e5e5 100%);
+  /* background: radial-gradient(circle, #f9f9f9 0%, #e5e5e5 100%); */
+  background: linear-gradient(to bottom right, #f0f4f8, #d0e1f9);
   min-height: 100vh;
   color: black;
   font-family: 'Roboto', sans-serif;
