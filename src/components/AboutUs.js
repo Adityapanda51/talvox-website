@@ -160,6 +160,7 @@ const AboutUs = () => {
             <CubeAnimation />
           </div> */}
         </div>
+        <div className="about-para">
         <h4>Welcome to Talvox, where innovation meets excellence.</h4>
         <p>
           Founded with a vision to bridge the gap between technology, human
@@ -167,6 +168,9 @@ const AboutUs = () => {
           committed to delivering comprehensive solutions that empower
           businesses to thrive in today's fast-paced world.
         </p>
+
+        </div>
+       
       </section>
 
 
