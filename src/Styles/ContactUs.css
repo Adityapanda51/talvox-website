@@ -10,11 +10,12 @@
   background: linear-gradient(to bottom right, #f0f4f8, #d0e1f9);
 }
 
-.contact-us h2 {
+.contact-uss h2 {
   position: relative; 
+  font-size: 2.5rem;
 }
 
-.contact-us h2::after {
+.contact-uss h2::after {
   content: '';
   width: 80px;
   height: 4px;
