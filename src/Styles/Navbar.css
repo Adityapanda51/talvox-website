@@ -256,13 +256,13 @@
 .dropdown-menu {
   display: none; /* Initially hide the dropdown */
   position: absolute; /* Position the dropdown absolutely */
-  background-color:  #288073; /* Background color for the dropdown */
+  /* background-color:  #288073; */
+  background: linear-gradient(to bottom right, #f0f4f8, #d0e1f9);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   border-radius: 10px; /* Rounded corners */
   margin-top: 2px; /* Space between button and dropdown */
   z-index: 1000; 
   animation: fadeIn 0.2s ease; /* Fade-in animation */
-  max-width: 100%;
 }
 
 .dropdown-menu.show {
@@ -272,15 +272,22 @@
 /* Dropdown Item Styles */
 .dropdown-item {
   padding: 5px 10px; /* Padding for dropdown items */
-  color: white; /* Text color */
+  color: black; /* Text color */
   text-decoration: none; /* Remove underline */
   transition: background-color 0.3s, color 0.3s; /* Transition effects */
   font-size: 0.9rem;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 0;
+  padding-right: 0;
 }
 
 .dropdown-item:hover {
-  background-color: #f0f0f0; /* Light gray on hover */
-  color:  #288073; /* Change color on hover */
+  /* background-color: #288073; */
+  background-color: rgba(40, 128, 115, 0.6); /* 80% opacity */
+
+  color:  black; /* Change color on hover */
   transform: translateY(-2px);
 }
 
@@ -297,7 +304,98 @@
 }
 
 
+/* Style for dropdown caret */
+.dropdown-caret {
+  margin-left: 5px; /* Space between the button text and caret */
+  transition: transform 0.3s ease; /* Optional: Smooth transition */
+  font-size: 1rem;
+}
+
+/* Style for when the dropdown is open */
+.dropdown-caret.open {
+  transform: rotate(180deg); /* Optional: Rotate when open */
+}
+/* Hide the default Bootstrap caret */
+.nav-link.dropdown-toggle::after {
+  display: none; /* Hides the default caret */
+}
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar Container */
+.navbar-container {
+  position: fixed; /* Keep the navbar fixed at the top */
+  top: 0; /* Position it at the top */
+  width: 100%; /* Make sure it takes the full width */
+  z-index: 1030; /* Ensure it stays above other content */
+  backdrop-filter: blur(10px); /* Optional: adds a blur effect behind the navbar */
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(40, 128, 115, 0.9); /* Background color of the navbar */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Body padding to avoid content being hidden behind the fixed navbar */
+body {
+  padding-top: 70px; /* Adjust this value according to the height of your navbar */
+}

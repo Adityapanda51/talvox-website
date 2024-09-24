@@ -211,6 +211,9 @@ const CustomNavbar = () => {
                   onClick={toggleDropdown}
                   aria-expanded={isDropdownOpen}>
                   Services 
+                  <span className={`dropdown-caret ${isDropdownOpen ? 'open' : ''}`}>
+                  {isDropdownOpen ? '\u25B2' : '\u25BC'} {/* Up and Down arrow */}
+                 </span>
                 </button>
                 <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
                   <li>
@@ -239,9 +242,6 @@ const CustomNavbar = () => {
                   </li>
                 </ul>
               </li>
-
-
-
 
 
               <li className="nav-item">
