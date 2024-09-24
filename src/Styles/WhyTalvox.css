@@ -21,16 +21,21 @@
   z-index: 10; /* Ensure heading is on top */
 }
 
-h2 {
+/* h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color:  #288073;
+  margin: 0; 
+  text-align: center; 
+} */
+
+.why-talvox h2 {
+  position: relative; 
   font-size: 3rem;
   font-weight: 700;
   color:  #288073;
   margin: 0; /* Ensure no margin is affecting centering */
   text-align: center; /* Center text inside h2 */
-}
-
-.why-talvox h2 {
-  position: relative; 
 }
 
 .why-talvox h2::after {

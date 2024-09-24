@@ -172,6 +172,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 20px;
   
 }
 
@@ -181,6 +182,8 @@ section {
   align-items: center;
   position: relative;
   color:  #288073;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .about-us h2::after {
