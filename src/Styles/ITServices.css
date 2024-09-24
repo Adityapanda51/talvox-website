@@ -50,11 +50,12 @@
 .it-details-content h3 {
   font-size: 2rem;
   margin-top: 20px;
+  margin-left: 20px;
   color:#288073;
 }
 
 .it-details-content p {
-  margin: 10px 0;
+  margin: 5px 0;
   line-height: 1.6;
 }
 
@@ -86,6 +87,9 @@
 
   .it-details-content h3 {
     font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

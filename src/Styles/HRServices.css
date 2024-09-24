@@ -1,7 +1,7 @@
-/* HRDetailPage.css */
+
 .hr-detail-page-container {
     position: relative;
-    padding: 20px;
+    padding: 30px;
     max-width: 800px;
     margin: 0 auto;
     font-family: Arial, sans-serif;
@@ -9,7 +9,8 @@
     background: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+    display: flex;
+    justify-content: center;
 
     h4{
       color:#288073;
@@ -42,18 +43,24 @@
     justify-content: center;
   }
   
-  .hr-details-content h2 {
-    font-size: 2.5rem;
+  .hr-details-content h4 {
+    font-size: 2rem;
     margin-top: 30px;
-    border-bottom: 2px solid #288073;
-    padding-bottom: 10px;
+    /* border-bottom: 2px solid #288073; */
+    color: #288073;
+    padding-bottom: 10px; 
+    padding-left: 20px;
   }
   
   .hr-details-content h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-top: 20px;
-    border-bottom: 2px solid #288073;
-    color: #288073;
+    border-bottom: 2px solid #288073;;
+    padding-bottom: 10px;
+    color:#288073;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .hr-details-content p {
@@ -63,7 +70,9 @@
   
   .hr-details-content strong {
     font-weight: bold;
+    font-size: 20px;
     color: black;
+    padding-left: 20px;
   }
   
   .no-bullets {
@@ -75,7 +84,7 @@
     margin-bottom: 5px;
   }
   
-  /* Responsive Styles */
+  
   @media (max-width: 768px) {
     .hr-detail-page-container {
       padding: 15px;
@@ -127,3 +136,117 @@
   }
   
   
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .hr-detail-page-container {
+      padding: 25px;
+  }
+
+  .close-button {
+      top: 15px;
+      right: 15px;
+      padding: 8px 16px;
+      font-size: 0.875rem;
+  }
+
+  .hr-details-content h1 {
+      font-size: 2.5rem;
+  }
+
+  .hr-details-content h3 {
+      font-size: 2rem;
+  }
+
+  .hr-details-content h4 {
+      font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hr-detail-page-container {
+      padding: 15px;
+  }
+
+  .close-button {
+      top: 10px;
+      right: 10px;
+      padding: 8px 14px;
+      font-size: 0.875rem;
+  }
+
+  .hr-details-content h1 {
+      font-size: 2rem;
+  }
+
+  .hr-details-content h3 {
+      font-size: 1.75rem;
+  }
+
+  .hr-details-content h4 {
+      font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hr-detail-page-container {
+      padding: 10px;
+  }
+
+  .close-button {
+      top: 10px;
+      right: 10px;
+      padding: 6px 12px;
+      font-size: 0.75rem;
+  }
+
+  .hr-details-content h1 {
+      font-size: 1.75rem;
+  }
+
+  .hr-details-content h3 {
+      font-size: 1.5rem;
+  }
+
+  .hr-details-content h4 {
+      font-size: 1.25rem;
+  }
+
+  .hr-details-content p {
+      font-size: 0.9rem;
+  }
+
+  .hr-details-content strong {
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hr-detail-page-container {
+      padding: 8px;
+  }
+
+  .close-button {
+      padding: 5px 10px;
+      font-size: 0.625rem;
+  }
+
+  .hr-details-content h1 {
+      font-size: 1.5rem;
+  }
+
+  .hr-details-content h3 {
+      font-size: 1.25rem;
+  }
+
+  .hr-details-content h4 {
+      font-size: 1rem;
+  }
+
+  .hr-details-content p {
+      font-size: 0.85rem;
+  }
+}
