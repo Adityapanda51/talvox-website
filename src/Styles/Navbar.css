@@ -338,25 +338,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Navbar Container */
 .navbar-container {
-  position: fixed; /* Keep the navbar fixed at the top */
+  position: relative; /* Keep the navbar fixed at the top */
   top: 0; /* Position it at the top */
   width: 100%; /* Make sure it takes the full width */
-  z-index: 1030; /* Ensure it stays above other content */
+  z-index: 1030; 
   backdrop-filter: blur(10px); /* Optional: adds a blur effect behind the navbar */
 }
 
@@ -364,11 +351,6 @@
 .navbar {
   background-color: rgba(40, 128, 115, 0.9); /* Background color of the navbar */
   transition: background-color 0.3s ease; /* Smooth background transition */
-}
-
-/* Body padding to avoid content being hidden behind the fixed navbar */
-body {
-  padding-top: 70px; /* Adjust this value according to the height of your navbar */
 }
 
 
