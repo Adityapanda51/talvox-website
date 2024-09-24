@@ -234,7 +234,7 @@ const CustomNavbar = () => {
                       className="dropdown-item" 
                       to="/digital-marketing"
                       onClick={() => handleLinkClick('/digital-marketing')}>
-                      Digital Marketing Services
+                      Digital Marketing <br></br>Services
                     </Link>
                   </li>
                 </ul>
