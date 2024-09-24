@@ -46,6 +46,11 @@ h1 {
   margin: 0;
 }
 
+
+.services-page-para{
+ padding: 0 80px;
+}
+
 .services-grid {
   display: flex;
   flex-wrap: wrap;
@@ -154,6 +159,9 @@ h1 {
     width: 100%;
     max-width: 500px; /* Adjusted max width for larger screens */
   }
+  .services-page-para{
+    padding: 0 20px;
+   }
 }
 
 @media (max-width: 480px) {

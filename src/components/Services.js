@@ -58,7 +58,7 @@ const ServicesPage = () => {
         <CubeAnimation />
       </div> */}
       </div>
-      <p> 
+      <p className="services-page-para"> 
         At Talvox, we provide a comprehensive suite of services designed to help
         businesses thrive in today’s competitive landscape. Whether you need
         cutting-edge IT solutions, strategic HR support, or dynamic digital
