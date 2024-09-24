@@ -2,7 +2,7 @@
 /* General Styles for WhyTalvox Section */
 .why-talvox {
   position: relative;
-  padding: 50px 20px;
+  padding: 40px 20px;
   /* background: radial-gradient(circle, #f9f9f9 0%, #e5e5e5 100%); */
   background: linear-gradient(to bottom right, #f0f4f8, #d0e1f9);
   min-height: 100vh;
@@ -92,8 +92,13 @@ p {
 
 
 
+@media (max-width: 1024px) {
+  .why-talvox ul li {
+    font-size: 1.2rem; 
+    margin-right: 30px;
+  }
 
-
+  }
 
 
 
@@ -112,6 +117,7 @@ p {
 
   .why-talvox ul li {
     font-size: 1.1rem; /* Reduce font size */
+    margin-right: 30px;
   }
 
   .why-talvox p {
