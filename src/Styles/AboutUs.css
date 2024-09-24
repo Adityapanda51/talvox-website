@@ -223,14 +223,15 @@ li {
   margin-bottom: 10px;
 }
 
-section {
+
+/* section {
   margin-bottom: 40px;
   background: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-}
+} */
 
 .what-we-do {
   display: flex;
@@ -282,7 +283,7 @@ section {
 
 .card {
   background: rgba(255, 255, 255, 0.9);
-  border-radius: 30px;
+  border-radius: 30px !important;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   flex: 1 1 calc(33% - 20px); 
@@ -293,7 +294,16 @@ section {
 
 .values-section ul li strong {
   color:  #288073;
-  font-weight: bold; 
+  /* font-weight: bold;  */
+  font-size: 1.2rem;
+}
+
+.values-section ul li {
+  font-size: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
 }
 
 

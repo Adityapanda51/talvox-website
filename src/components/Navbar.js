@@ -1,27 +1,35 @@
 // import React, { useState } from 'react';
-// import { Link, useLocation } from 'react-router-dom'; // Import Link and useLocation
-// import logo from '../assets/logo1.png'; // Adjust the path if needed
-// import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-// import '../Styles/Navbar.css'; // Custom styles if needed
+// import { Link } from 'react-router-dom';
+// import logo from '../assets/logo1.png';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import '../Styles/Navbar.css';
 
 // const CustomNavbar = () => {
 //   const [isNavOpen, setIsNavOpen] = useState(false);
-//   const location = useLocation(); // Get the current location
+//   const [activeLink, setActiveLink] = useState(null); // Track active link
 
 //   const toggleNav = () => {
 //     setIsNavOpen(!isNavOpen);
+//   };
+
+//   const handleLinkClick = (path) => {
+//     setActiveLink(path);
+//     setIsNavOpen(false);
+//   };
+
+//   const handleLogoClick = () => {
+//     setActiveLink(null); // Reset active link when logo is clicked
+//     setIsNavOpen(false);
 //   };
 
 //   return (
 //     <header className="navbar-container">
 //       <nav className="navbar navbar-expand-lg navbar-light bg-light">
 //         <div className="container-fluid">
-//           {/* Logo Section */}
-//           <Link className="navbar-brand" to="/">
+//           <Link className="navbar-brand" to="/" onClick={handleLogoClick}>
 //             <img src={logo} alt="Logo" className="logo" />
 //           </Link>
 
-//           {/* Hamburger Toggle Button */}
 //           <button
 //             className="navbar-toggler"
 //             type="button"
@@ -33,43 +41,70 @@
 //             <span className="navbar-toggler-icon"></span>
 //           </button>
 
-//           {/* Navbar Links */}
 //           <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`} id="navbarNav">
 //             <ul className="navbar-nav">
 //               <li className="nav-item">
-//                 <Link className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} to="/" onClick={() => setIsNavOpen(false)}>
+//                 <Link 
+//                   className={`nav-link ${activeLink === '/' ? 'active' : ''}`} 
+//                   to="/" 
+//                   onClick={() => handleLinkClick('/')}
+//                 >
 //                   Home
 //                 </Link>
 //               </li>
 //               <li className="nav-item">
-//                 <Link className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`} to="/about" onClick={() => setIsNavOpen(false)}>
+//                 <Link 
+//                   className={`nav-link ${activeLink === '/about' ? 'active' : ''}`} 
+//                   to="/about" 
+//                   onClick={() => handleLinkClick('/about')}
+//                 >
 //                   About Us
 //                 </Link>
 //               </li>
 //               <li className="nav-item">
-//                 <Link className={`nav-link ${location.pathname === '/services' ? 'active' : ''}`} to="/services" onClick={() => setIsNavOpen(false)}>
+//                 <Link 
+//                   className={`nav-link ${activeLink === '/services' ? 'active' : ''}`} 
+//                   to="/services" 
+//                   onClick={() => handleLinkClick('/services')}
+//                 >
 //                   Services
 //                 </Link>
 //               </li>
 //               <li className="nav-item">
-//                 <Link className={`nav-link ${location.pathname === '/industries' ? 'active' : ''}`} to="/industries" onClick={() => setIsNavOpen(false)}>
+//                 <Link 
+//                   className={`nav-link ${activeLink === '/industries' ? 'active' : ''}`} 
+//                   to="/industries" 
+//                   onClick={() => handleLinkClick('/industries')}
+//                 >
 //                   Industries
 //                 </Link>
 //               </li>
 //               <li className="nav-item">
-//                 <Link className={`nav-link ${location.pathname === '/why-talvox' ? 'active' : ''}`} to="/why-talvox" onClick={() => setIsNavOpen(false)}>
+//                 <Link 
+//                   className={`nav-link ${activeLink === '/why-talvox' ? 'active' : ''}`} 
+//                   to="/why-talvox" 
+//                   onClick={() => handleLinkClick('/why-talvox')}
+//                 >
 //                   Why Talvox
 //                 </Link>
 //               </li>
 //               <li className="nav-item">
-//                 <Link className={`nav-link ${location.pathname === '/careers' ? 'active' : ''}`} to="/careers" onClick={() => setIsNavOpen(false)}>
+//                 <Link 
+//                   className={`nav-link ${activeLink === '/careers' ? 'active' : ''}`} 
+//                   to="/careers" 
+//                   onClick={() => handleLinkClick('/careers')}
+//                 >
 //                   Careers
 //                 </Link>
 //               </li>
 //             </ul>
 //             <ul className="navbar-nav navbar-contact">
 //               <li className="nav-item">
-//                 <Link className={`nav-link contact-link ${location.pathname === '/contact' ? 'active' : ''}`} to="/contact" onClick={() => setIsNavOpen(false)}>
+//                 <Link 
+//                   className={`nav-link contact-link ${activeLink === '/contact' ? 'active' : ''}`} 
+//                   to="/contact" 
+//                   onClick={() => handleLinkClick('/contact')}
+//                 >
 //                   Contact Us
 //                 </Link>
 //               </li>
@@ -89,6 +124,7 @@
 
 
 
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo1.png';
@@ -98,14 +134,20 @@ import '../Styles/Navbar.css';
 const CustomNavbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [activeLink, setActiveLink] = useState(null); // Track active link
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Track dropdown state
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
 
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
   const handleLinkClick = (path) => {
     setActiveLink(path);
     setIsNavOpen(false);
+    setIsDropdownOpen(false); // Close dropdown when link is clicked
   };
 
   const handleLogoClick = () => {
@@ -138,8 +180,7 @@ const CustomNavbar = () => {
                 <Link 
                   className={`nav-link ${activeLink === '/' ? 'active' : ''}`} 
                   to="/" 
-                  onClick={() => handleLinkClick('/')}
-                >
+                  onClick={() => handleLinkClick('/')}>
                   Home
                 </Link>
               </li>
@@ -147,26 +188,67 @@ const CustomNavbar = () => {
                 <Link 
                   className={`nav-link ${activeLink === '/about' ? 'active' : ''}`} 
                   to="/about" 
-                  onClick={() => handleLinkClick('/about')}
-                >
+                  onClick={() => handleLinkClick('/about')}>
                   About Us
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link 
-                  className={`nav-link ${activeLink === '/services' ? 'active' : ''}`} 
-                  to="/services" 
-                  onClick={() => handleLinkClick('/services')}
-                >
-                  Services
-                </Link>
+              {/* <li className="nav-item">
+                 <Link 
+                   className={`nav-link ${activeLink === '/services' ? 'active' : ''}`} 
+                   to="/services" 
+                   onClick={() => handleLinkClick('/services')}
+                 >
+                   Services
+                 </Link>
+               </li> */}
+
+
+
+
+              <li className="nav-item dropdown">
+                <button 
+                  className="btn nav-link dropdown-toggle" 
+                  onClick={toggleDropdown}
+                  aria-expanded={isDropdownOpen}>
+                  Services 
+                </button>
+                <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
+                  <li>
+                    <Link 
+                      className="dropdown-item" 
+                      to="/it-services"
+                      onClick={() => handleLinkClick('it-services')}>
+                      IT Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link 
+                      className="dropdown-item" 
+                      to="/hr-services"
+                      onClick={() => handleLinkClick('/hr-services')}>
+                      HR Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link 
+                      className="dropdown-item" 
+                      to="/digital-marketing"
+                      onClick={() => handleLinkClick('/digital-marketing')}>
+                      Digital Marketing Services
+                    </Link>
+                  </li>
+                </ul>
               </li>
+
+
+
+
+
               <li className="nav-item">
                 <Link 
                   className={`nav-link ${activeLink === '/industries' ? 'active' : ''}`} 
                   to="/industries" 
-                  onClick={() => handleLinkClick('/industries')}
-                >
+                  onClick={() => handleLinkClick('/industries')}>
                   Industries
                 </Link>
               </li>
@@ -174,8 +256,7 @@ const CustomNavbar = () => {
                 <Link 
                   className={`nav-link ${activeLink === '/why-talvox' ? 'active' : ''}`} 
                   to="/why-talvox" 
-                  onClick={() => handleLinkClick('/why-talvox')}
-                >
+                  onClick={() => handleLinkClick('/why-talvox')}>
                   Why Talvox
                 </Link>
               </li>
@@ -183,8 +264,7 @@ const CustomNavbar = () => {
                 <Link 
                   className={`nav-link ${activeLink === '/careers' ? 'active' : ''}`} 
                   to="/careers" 
-                  onClick={() => handleLinkClick('/careers')}
-                >
+                  onClick={() => handleLinkClick('/careers')}>
                   Careers
                 </Link>
               </li>
@@ -194,8 +274,7 @@ const CustomNavbar = () => {
                 <Link 
                   className={`nav-link contact-link ${activeLink === '/contact' ? 'active' : ''}`} 
                   to="/contact" 
-                  onClick={() => handleLinkClick('/contact')}
-                >
+                  onClick={() => handleLinkClick('/contact')}>
                   Contact Us
                 </Link>
               </li>
