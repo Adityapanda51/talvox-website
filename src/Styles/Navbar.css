@@ -40,7 +40,6 @@
   height: 300px;
   width: auto;
   transition: height 0.3s ease;
-  margin-right: 100px;
 }
 
 /* Navbar Links */
@@ -352,34 +351,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Navbar Container */
 .navbar-container {
   position: fixed; /* Keep the navbar fixed at the top */
@@ -399,3 +370,25 @@
 body {
   padding-top: 70px; /* Adjust this value according to the height of your navbar */
 }
+
+
+
+
+@media (max-width: 1024px) {
+  .navbar-container {
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    position: relative;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-container {
+    position: relative;
+  }
+}
+
