@@ -34,7 +34,7 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 import AboutUs from './components/AboutUs';
 import Home from './components/Home';
 import Services from './components/Services';
@@ -48,13 +48,15 @@ import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap JS
 import ITServices from './components/ITServices';
 import HRDetailPage from './components/HRServices';
 import DigitalMarketingDetailPage from './components/DigitalMarketingServices';
+import CustomNavbar from './components/Navbar';
 
 
 const App = () => {
   return (
     <Router>
       {/* Navbar is visible on all pages */}
-      <Navbar />
+      {/* <Navbar /> */}
+      <CustomNavbar />
       <Routes>
         {/* Define routes for each component */}
         <Route path="/" element={<Home />} />
