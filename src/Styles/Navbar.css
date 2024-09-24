@@ -178,6 +178,7 @@
   height: 300px;
   width: auto;
   transition: height 0.3s ease;
+  margin-right: 40px;
 }
 
 /* Navbar Links */
