@@ -64,6 +64,7 @@ h2 {
   color:  #288073;
   animation: scaleUp 1s ease-out forwards;
   animation-delay: 0.6s;
+  padding-left: 0;
 }
 
 .cta-buttons {
@@ -135,7 +136,9 @@ h2 {
 @media (max-width: 1024px) {
   .home-section {
     height: 90vh;
-    padding-left: 2rem; /* Reduce left padding for smaller screens */
+    /* padding-left: 2rem;  */
+    display: flex;
+    justify-content: flex-start;
   }
 
   .hero-content {
@@ -168,7 +171,7 @@ h2 {
     height: 80vh;
     justify-content: flex-start;
     padding-top: 20px;
-    padding-left: 1.5rem; /* Further reduce left padding for mobile screens */
+    /* padding-left: 1.5rem;  */
     
   }
 
@@ -186,6 +189,8 @@ h2 {
 
   .hero-content p {
     font-size: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .cta-buttons {
@@ -205,17 +210,20 @@ h2 {
     height: 80vh;
     padding-top: 2rem;
     padding-left: 1rem;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .hero-content h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     width: 50%;
-    padding-left: 2.5rem;
+    padding-left: 2.8rem;
   }
 
   .hero-content p {
     font-size: 1rem;
     width: 50%;
+    padding-left: 1.4rem;
   }
 
   .cta-btn {
