@@ -146,41 +146,15 @@
 
 
 
-import React, { useState } from "react";
+import React from "react";
 import "./Services.css";
 
 // Import images
 import itImage from "../../assets/itservice.jpeg";
 import hrImage from "../../assets/hrservice.jpeg";
 import digitalMarketingImage from "../../assets/digital-marketing.jpeg";
-import ITServices from "../ITServices/ITServices";
-import HRServices from "../HRServices/HRServices"; 
-import DigitalMarketingServices from "../DigitalMarketingServices/DigitalMarketingServices";
 
 const ServicesPage = () => {
-  const [showITDetails, setShowITDetails] = useState(false);
-  const [showHRDetails, setShowHRDetails] = useState(false); // New state for HR services
-  const [showDigitalMarketingDetails, setShowDigitalMarketingDetails] =
-    useState(false); // New state for Digital Marketing
-
-  const handleCloseDetails = () => {
-    setShowITDetails(false);
-    setShowHRDetails(false);
-    setShowDigitalMarketingDetails(false);
-  };
-
-  if (showITDetails) {
-    return <ITServices onClose={handleCloseDetails} />;
-  }
-
-  if (showHRDetails) {
-    return <HRServices onClose={handleCloseDetails} />; // Render HRServices component
-  }
-
-  if (showDigitalMarketingDetails) {
-    return <DigitalMarketingServices onClose={handleCloseDetails} />; // Render DigitalMarketingServices component
-  }
-
   return (
     <div id="services" className="services-page-container">
       <div className="heading-container">
