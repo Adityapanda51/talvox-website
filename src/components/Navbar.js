@@ -294,7 +294,15 @@
 
 
 
-import React, { useState, useEffect } from 'react';
+
+
+
+
+
+
+
+
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo1.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -302,11 +310,10 @@ import '../Styles/Navbar.css';
 
 const CustomNavbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState(null); // Track active link
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Track dropdown state
-  const [isNavbarHidden, setIsNavbarHidden] = useState(false); // Track navbar visibility
-
-  let lastScrollY = window.scrollY;
+  const [activeLink, setActiveLink] = useState(null);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isNavbarHidden, setIsNavbarHidden] = useState(false);
+  const lastScrollY = useRef(0); // Use useRef to persist lastScrollY
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -319,34 +326,33 @@ const CustomNavbar = () => {
   const handleLinkClick = (path) => {
     setActiveLink(path);
     setIsNavOpen(false);
-    setIsDropdownOpen(false); // Close dropdown when link is clicked
+    setIsDropdownOpen(false);
   };
 
   const handleLogoClick = () => {
-    setActiveLink(null); // Reset active link when logo is clicked
+    setActiveLink(null);
     setIsNavOpen(false);
   };
 
-  // Function to handle navbar visibility based on scroll direction
-  const handleScroll = () => {
-    if (window.scrollY > lastScrollY) {
-      // Scrolling down
-      setIsNavbarHidden(true);
-    } else {
-      // Scrolling up
-      setIsNavbarHidden(false);
-    }
-    lastScrollY = window.scrollY;
-  };
-
-  // Add and remove scroll event listener
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
 
+      // Show or hide the navbar based on the scroll direction and threshold
+      if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
+        setIsNavbarHidden(true); // Hide on scroll down
+      } else if (currentScrollY < lastScrollY.current && currentScrollY > 100) {
+        setIsNavbarHidden(false); // Show on scroll up
+      }
+
+      lastScrollY.current = currentScrollY; // Update lastScrollY
+    };
+
+    window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, );
+  }, []); // Empty dependency array
 
   return (
     <header className={`navbar-container ${isNavbarHidden ? 'navbar-hidden' : ''}`}>
@@ -370,91 +376,59 @@ const CustomNavbar = () => {
           <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`} id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link 
-                  className={`nav-link ${activeLink === '/' ? 'active' : ''}`} 
-                  to="/" 
-                  onClick={() => handleLinkClick('/')}>
+                <Link className={`nav-link ${activeLink === '/' ? 'active' : ''}`} to="/" onClick={() => handleLinkClick('/')}>
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link 
-                  className={`nav-link ${activeLink === '/about' ? 'active' : ''}`} 
-                  to="/about" 
-                  onClick={() => handleLinkClick('/about')}>
+                <Link className={`nav-link ${activeLink === '/about' ? 'active' : ''}`} to="/about" onClick={() => handleLinkClick('/about')}>
                   About Us
                 </Link>
               </li>
-
               <li className="nav-item dropdown">
-                <button 
-                  className="btn nav-link dropdown-toggle" 
-                  onClick={toggleDropdown}
-                  aria-expanded={isDropdownOpen}>
+                <button className="btn nav-link dropdown-toggle" onClick={toggleDropdown} aria-expanded={isDropdownOpen}>
                   Services 
                   <span className={`dropdown-caret ${isDropdownOpen ? 'open' : ''}`}>
-                  {isDropdownOpen ? '\u25B2' : '\u25BC'} {/* Up and Down arrow */}
-                 </span>
+                    {isDropdownOpen ? '\u25B2' : '\u25BC'}
+                  </span>
                 </button>
                 <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
                   <li>
-                    <Link 
-                      className="dropdown-item" 
-                      to="/it-services"
-                      onClick={() => handleLinkClick('it-services')}>
+                    <Link className="dropdown-item" to="/it-services" onClick={() => handleLinkClick('it-services')}>
                       IT Services
                     </Link>
                   </li>
                   <li>
-                    <Link 
-                      className="dropdown-item" 
-                      to="/hr-services"
-                      onClick={() => handleLinkClick('/hr-services')}>
+                    <Link className="dropdown-item" to="/hr-services" onClick={() => handleLinkClick('/hr-services')}>
                       HR Services
                     </Link>
                   </li>
                   <li>
-                    <Link 
-                      className="dropdown-item" 
-                      to="/digital-marketing"
-                      onClick={() => handleLinkClick('/digital-marketing')}>
-                      Digital Marketing <br></br>Services
+                    <Link className="dropdown-item" to="/digital-marketing" onClick={() => handleLinkClick('/digital-marketing')}>
+                      Digital Marketing <br /> Services
                     </Link>
                   </li>
                 </ul>
               </li>
-
               <li className="nav-item">
-                <Link 
-                  className={`nav-link ${activeLink === '/industries' ? 'active' : ''}`} 
-                  to="/industries" 
-                  onClick={() => handleLinkClick('/industries')}>
+                <Link className={`nav-link ${activeLink === '/industries' ? 'active' : ''}`} to="/industries" onClick={() => handleLinkClick('/industries')}>
                   Industries
                 </Link>
               </li>
               <li className="nav-item">
-                <Link 
-                  className={`nav-link ${activeLink === '/why-talvox' ? 'active' : ''}`} 
-                  to="/why-talvox" 
-                  onClick={() => handleLinkClick('/why-talvox')}>
+                <Link className={`nav-link ${activeLink === '/why-talvox' ? 'active' : ''}`} to="/why-talvox" onClick={() => handleLinkClick('/why-talvox')}>
                   Why Talvox
                 </Link>
               </li>
               <li className="nav-item">
-                <Link 
-                  className={`nav-link ${activeLink === '/careers' ? 'active' : ''}`} 
-                  to="/careers" 
-                  onClick={() => handleLinkClick('/careers')}>
+                <Link className={`nav-link ${activeLink === '/careers' ? 'active' : ''}`} to="/careers" onClick={() => handleLinkClick('/careers')}>
                   Careers
                 </Link>
               </li>
             </ul>
             <ul className="navbar-nav navbar-contact">
               <li className="nav-item">
-                <Link 
-                  className={`nav-link contact-link ${activeLink === '/contact' ? 'active' : ''}`} 
-                  to="/contact" 
-                  onClick={() => handleLinkClick('/contact')}>
+                <Link className={`nav-link contact-link ${activeLink === '/contact' ? 'active' : ''}`} to="/contact" onClick={() => handleLinkClick('/contact')}>
                   Contact Us
                 </Link>
               </li>

@@ -193,6 +193,7 @@
 .nav-link {
   position: relative; /* Allow positioning of the pseudo-element */
   transition: color 0.3s ease; /* Smooth transition for color change */
+  display: inline-block;
 }
 
 .nav-link.active {
@@ -223,6 +224,19 @@
 .nav-link:hover::after {
   transform: scaleX(1); /* Ensure underline is visible on hover */
 }
+
+
+
+
+
+@media (max-width: 768px) {
+  .nav-link.active::after {
+    width: 100%; /* Make underline take the full width of the active link */
+    left: 0; /* Align it to the left */
+    transform: none; /* Remove the centering transform */
+  }
+}
+
 
 
 
@@ -357,7 +371,9 @@
 
 .navbar-hidden {
   transform: translateY(-100%); /* Move the navbar out of view */
+  transition: transform 0.3s ease; /* Smooth transition */
 }
+
 
 @media (max-width: 1024px) {
   .navbar-container {
