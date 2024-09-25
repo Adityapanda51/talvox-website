@@ -137,9 +137,9 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo1.png';
+import logo from '../../assets/logo1.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../Styles/Navbar.css';
+import './Navbar.css';
 
 const CustomNavbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);

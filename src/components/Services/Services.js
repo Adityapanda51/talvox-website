@@ -147,15 +147,15 @@
 
 
 import React, { useState } from "react";
-import "../Styles/Services.css";
+import "./Services.css";
 
 // Import images
-import itImage from "../assets/itservice.jpeg";
-import hrImage from "../assets/hrservice.jpeg";
-import digitalMarketingImage from "../assets/digital-marketing.jpeg";
-import ITServices from "./ITServices";
-import HRServices from "./HRServices"; // Add HRServices component
-import DigitalMarketingServices from "./DigitalMarketingServices"; // Add DigitalMarketingServices component
+import itImage from "../../assets/itservice.jpeg";
+import hrImage from "../../assets/hrservice.jpeg";
+import digitalMarketingImage from "../../assets/digital-marketing.jpeg";
+import ITServices from "../ITServices/ITServices";
+import HRServices from "../HRServices/HRServices"; 
+import DigitalMarketingServices from "../DigitalMarketingServices/DigitalMarketingServices";
 
 const ServicesPage = () => {
   const [showITDetails, setShowITDetails] = useState(false);

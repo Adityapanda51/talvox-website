@@ -231,7 +231,7 @@
 
 
 import React from "react";
-import "../Styles/HRServices.css";
+import "./HRServices.css";
 
 const HRDetailPage = ({ onClose }) => {
   return (

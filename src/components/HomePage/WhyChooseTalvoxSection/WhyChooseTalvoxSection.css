@@ -1,0 +1,93 @@
+/* General section styling */
+.why-talvox-section {
+    padding: 10px 20px;
+    /* background-color: #f0f5f9;  */
+    background: linear-gradient(to bottom right, #f0f4f8, #d0e1f9);
+    margin: 40px 0;
+    color: black;
+  }
+  
+  
+  
+  .why-talvox-section h1 {
+    font-size: 3rem;
+    color:  #288073;
+  }
+  
+  
+  .why-talvox-section h1 {
+    position: relative; /* Needed for absolute positioning of the ::after pseudo-element */
+  }
+  
+  .why-talvox-section h1::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color:  #288073;
+    position: absolute;
+    bottom: -10px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Styling the list */
+  .why-talvox-list {
+    padding: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  
+  .why-talvox-list li {
+    font-size: 1.2rem;
+    color: black;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    padding-left: 40px;
+    position: relative;
+  }
+  
+  /* Styling for the strong (bold) text */
+  .why-talvox-list li strong {
+    font-size: 1.4rem;
+    color:  #288073;
+    font-weight: 600;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .why-talvox-section h1 {
+      font-size: 1.2rem;
+    }
+  
+    .why-talvox-list li {
+      font-size: 1.1rem;
+      padding-left: 30px;
+    }
+  
+    .why-talvox-list li::before {
+      width: 8px;
+      height: 8px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* .why-talvox-section h2 {
+      font-size: 1.8rem;
+    } */
+  
+    .why-talvox-section h1 {
+      font-size: 1.5rem;
+    }
+  
+    .why-talvox-list li {
+      font-size: 1rem;
+      padding-left: 25px;
+    }
+  
+    .why-talvox-list li::before {
+      width: 6px;
+      height: 6px;
+    }
+  }
+  

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/WhatsAppChatButton.css'; 
+import './WhatsAppChatButton.css'; 
 
 const WhatsAppChatButton = () => {
   const phoneNumber = '+919705412029'; // Replace with your WhatsApp number in international format

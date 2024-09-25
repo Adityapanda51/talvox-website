@@ -1,0 +1,260 @@
+
+.about-page-container {
+    padding: 40px;
+    /* background-color: #f4f4f9; */
+    background: linear-gradient(to bottom right, #f0f4f8, #d0e1f9);
+    text-align: center;
+    color: black;
+  }
+  
+  .about-page-container h1 {
+    font-size: 3rem;
+    text-align: center;
+    color:  #288073;
+  }
+  
+  
+  .about-page-container h1 {
+    position: relative; /* Needed for absolute positioning of the ::after pseudo-element */
+  }
+  
+  .about-page-container h1::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color:  #288073;
+    position: absolute;
+    bottom: -10px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .about-page-container p {
+    font-size: 1.2rem;
+    color: black;
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+  
+  /* Flexbox container for the cards */
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* About card styling */
+  .about-card {
+    position: relative;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .card-content h3 {
+    font-size: 2rem; /* Example: for cards */
+    text-align: center;
+  }
+  
+  /* Card Header for logo and title */
+  .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .card-logo {
+    width: 80px; /* Adjust size of the logo */
+    height: 80px;
+    margin-right: 15px; /* Space between the logo and title */
+  }
+  
+  /* Overlay effect */
+  .about-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: 1;
+  }
+  
+  .about-card h2,
+  .about-card p {
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+    color: black;
+  }
+  
+  /* Headings */
+  .about-card h2 {
+    font-size: 1.8rem;
+    color:  #288073;
+    margin-bottom: 10px;
+  }
+  
+  .about-card p {
+    font-size: 1rem;
+    color: black;
+  }
+  
+  /* Hover effect */
+  .about-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Media Queries */
+  
+  
+  @media (max-width: 1024px) {
+    .about-page-container h1 {
+      font-size: 3rem; /* Slightly larger font size for bigger screens */
+    }
+  
+    .about-page-container p {
+      font-size: 1.2rem; /* Increase paragraph font size */
+    }
+  
+    .about-card {
+      max-width: 800px; /* Slightly larger width for cards */
+      margin: 0 auto; /* Center the card */
+    }
+  
+    .card-logo {
+      width: 90px; /* Larger logo */
+      height: 90px;
+      margin-right: 25px; /* Adjust margin for alignment */
+    }
+  
+    .about-card h2 {
+      font-size: 1.8rem; /* Larger font size for h2 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    h1 {
+      font-size: 2.5rem; /* Increase h1 size */
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    h3 {
+      font-size: 1.8rem; /* Slightly larger h3 for bigger screens */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  
+  /* Medium devices (tablets) */
+  @media (max-width: 768px) {
+    .about-page-container h1 {
+      font-size: 2.5rem;
+    }
+  
+    .about-page-container p {
+      font-size: 1.1rem;
+    }
+  
+    .about-card {
+      max-width: 300px;
+    }
+  
+    .card-logo {
+      width: 70px;
+      height: 70px;
+      margin-right: 35px;
+    }
+  
+  
+    .about-card h2 {
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2rem; /* Make h1 smaller */
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    h3 {
+      font-size: 1.5rem; /* Make h3 smaller */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+    }
+  
+  }
+  
+  /* Small devices (mobile) */
+  @media (max-width: 480px) {
+    .about-page-container {
+      padding: 20px;
+    }
+  
+    .about-page-container h1 {
+      font-size: 1.75rem;
+    }
+  
+    .about-page-container p {
+      font-size: 1rem;
+    }
+  
+    .about-list {
+      flex-direction: column; /* Stack the cards vertically on small screens */
+      align-items: center;
+    }
+  
+    .about-card {
+      max-width: 100%;
+    }
+  
+    .card-logo {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .about-card h2 {
+      font-size: 1rem;
+      display: flex;
+      justify-content: center;
+      margin-right: 70px;
+    }
+    h1 {
+      font-size: 1.8rem; /* Further reduce h1 size for smaller screens */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    h3 {
+      font-size: 1.3rem; /* Further reduce h3 size */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }

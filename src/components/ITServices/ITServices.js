@@ -57,7 +57,7 @@
 
 
 import React from 'react';
-import '../Styles/ITServices.css';
+import './ITServices.css';
 
 const ITServices = ({ onClose }) => {
   return (

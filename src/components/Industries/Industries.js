@@ -1,16 +1,16 @@
 import React from 'react';
-import '../Styles/Industries.css';
+import './Industries.css';
 
 // Import images
-import techImage from '../assets/technology.jpeg';
-import healthcareImage from '../assets/health.jpeg';
-import financeImage from '../assets/finance.webp';
-import retailImage from '../assets/retail.jpg';
-import educationImage from '../assets/education.jpeg';
-import manufacturingImage from '../assets/manufacturing.webp';
-import realEstateImage from '../assets/realestate.jpg';
-import energyImage from '../assets/energy.jpeg';
-import travelImage from '../assets/travel.jpg';
+import techImage from '../../assets/technology.jpeg';
+import healthcareImage from '../../assets/health.jpeg';
+import financeImage from '../../assets/finance.webp';
+import retailImage from '../../assets/retail.jpg';
+import educationImage from '../../assets/education.jpeg';
+import manufacturingImage from '../../assets/manufacturing.webp';
+import realEstateImage from '../../assets/realestate.jpg';
+import energyImage from '../../assets/energy.jpeg';
+import travelImage from '../../assets/travel.jpg';
 // import CubeAnimation from './CubeAnimation';
 
 const industriesData = [

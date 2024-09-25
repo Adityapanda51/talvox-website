@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/Careers.css";
+import "./Careers.css";
 // import CubeAnimation from "./CubeAnimation";
 
 const Careers = () => {

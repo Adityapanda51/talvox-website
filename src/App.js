@@ -1,54 +1,19 @@
-// import React from 'react';
-// import './App.css';
-// import Navbar from './components/Navbar';
-// import Home from './components/Home';
-// import AboutUs from './components/AboutUs';
-// import Services from './components/Services';
-// import Industries from './components/Industries';
-// import WhyTalvox from './components/WhyTalvox';
-// import Careers from './components/Careers';
-// import ContactUs from './components/ContactUs';
-// import Footer from './components/Footer';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-// const App = () => {
-//   return (
-//     <div>
-//       <Navbar />
-//       <Home />
-//       <AboutUs />
-//       <Services />
-//       <Industries />
-//       <WhyTalvox />
-//       <Careers />
-//       <ContactUs />
-//       <Footer />
-//     </div>
-//   )
-// }
-
-// export default App
-
-
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import Navbar from './components/Navbar';
-import AboutUs from './components/AboutUs';
-import Home from './components/Home';
-import Services from './components/Services';
-import Industries from './components/Industries';
-import WhyTalvox from './components/WhyTalvox';
-import Careers from './components/Careers';
-import ContactUs from './components/ContactUs';
-import Footer from './components/Footer';
+import AboutUs from './components/AboutUs/AboutUs';
+import Services from './components/Services/Services';
+import Industries from './components/Industries/Industries';
+import WhyTalvox from './components/WhyTalvox/WhyTalvox';
+import Careers from './components/Careers/Careers';
+import ContactUs from './components/ContactUs/ContactUs';
+import Footer from './components/Footer/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap JS
-import ITServices from './components/ITServices';
-import HRDetailPage from './components/HRServices';
-import DigitalMarketingDetailPage from './components/DigitalMarketingServices';
-import CustomNavbar from './components/Navbar';
+import ITServices from './components/ITServices/ITServices';
+import HRDetailPage from './components/HRServices/HRServices';
+import DigitalMarketingDetailPage from './components/DigitalMarketingServices/DigitalMarketingServices';
+import CustomNavbar from './components/Navbar/Navbar';
+import HomePage from './components/HomePage/HomePage';
 
 
 const App = () => {
@@ -59,7 +24,7 @@ const App = () => {
       <CustomNavbar />
       <Routes>
         {/* Define routes for each component */}
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUs/>} />
         <Route path="/services" element={<Services />} />
         <Route path="/it-services" element={<ITServices />} />

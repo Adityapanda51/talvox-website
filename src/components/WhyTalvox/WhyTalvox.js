@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/WhyTalvox.css";
+import "./WhyTalvox.css";
 // import CubeAnimation from "./CubeAnimation";  
 
 const WhyTalvox = () => {

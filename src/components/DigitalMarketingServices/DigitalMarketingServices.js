@@ -188,7 +188,7 @@
 
 
 import React from "react";
-import "../Styles/DigitalMarketingServices.css";
+import "./DigitalMarketingServices.css";
 
 const DigitalMarketingDetailPage = ({ onClose }) => {
   return (

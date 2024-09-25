@@ -1,7 +1,7 @@
 import React from "react";
-import "../Styles/Footer.css";
+import "./Footer.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import xIcon from "../assets/twitter.webp";
+import xIcon from "../../assets/twitter.webp";
 
 const Footer = () => {
   return (
