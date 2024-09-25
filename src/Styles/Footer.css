@@ -240,3 +240,70 @@
     flex-direction: row;
   }
 }
+
+
+
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 30px 0; /* Increase padding for more spacing */
+    flex-direction: column; /* Stack content vertically */
+  }
+
+  .footer-content {
+    flex-direction: row; /* Still use row layout */
+    justify-content: center; /* Center the content horizontally */
+    max-width: 100%; /* Allow footer content to take full width */
+    padding: 0 40px; /* Add more padding on the sides */
+  }
+
+  .footer-section {
+    min-width: 250px; /* Increase minimum width for better spacing */
+    margin-bottom: 20px; /* Add some margin between sections */
+    text-align: center; /* Center text */
+  }
+
+  .footer-section h3 {
+    font-size: 1.6rem; /* Larger heading size */
+    margin-bottom: 15px;
+  }
+
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section ul li {
+    margin: 10px 0; /* Increase spacing between list items */
+  }
+
+  .footer-section ul li a {
+    font-size: 1.1rem; /* Increase font size for readability */
+  }
+
+  .footer-map iframe {
+    width: 80%; /* Slightly wider map */
+    height: 140px; /* Increase height of the map */
+  }
+
+  .footer-bottom {
+    font-size: 15px; /* Slightly increase font size */
+    padding: 15px 0; /* More padding */
+  }
+
+  /* Social Media Section */
+  .footer-section.social-media ul {
+    gap: 20px; /* Larger gap between social media icons */
+  }
+
+  .social-icon i {
+    font-size: 36px; /* Slightly smaller icons */
+  }
+
+  .footer-section.social-media a {
+    font-size: 20px; /* Adjust font size */
+  }
+}

@@ -345,6 +345,12 @@ h2 {
   text-align: center;
 }
 
+/* .about-list .card-header h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
 /* Card Header for logo and title */
 .card-header {
   display: flex;
@@ -398,6 +404,51 @@ h2 {
 
 /* Media Queries */
 
+
+@media (max-width: 1024px) {
+  .about-page-container h1 {
+    font-size: 3rem; /* Slightly larger font size for bigger screens */
+  }
+
+  .about-page-container p {
+    font-size: 1.2rem; /* Increase paragraph font size */
+  }
+
+  .about-card {
+    max-width: 800px; /* Slightly larger width for cards */
+    margin: 0 auto; /* Center the card */
+  }
+
+  .card-logo {
+    width: 90px; /* Larger logo */
+    height: 90px;
+    margin-right: 25px; /* Adjust margin for alignment */
+  }
+
+  .about-card h2 {
+    font-size: 1.8rem; /* Larger font size for h2 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Increase h1 size */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h3 {
+    font-size: 1.8rem; /* Slightly larger h3 for bigger screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
 /* Medium devices (tablets) */
 @media (max-width: 768px) {
   .about-page-container h1 {
@@ -415,7 +466,9 @@ h2 {
   .card-logo {
     width: 70px;
     height: 70px;
+    margin-right: 35px;
   }
+
 
   .about-card h2 {
     font-size: 1.5rem;
@@ -470,10 +523,10 @@ h2 {
   }
 
   .about-card h2 {
-    font-size: 1.4rem;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-right: 70px;
   }
   h1 {
     font-size: 1.8rem; /* Further reduce h1 size for smaller screens */
