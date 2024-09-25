@@ -3,7 +3,7 @@ import "./AboutUs.css";
 // import itImage from "../assets/it.jpg";
 // import hrImage from "../assets/hr.png";
 // import digitalMarketingImage from "../assets/digitalmarketing.png";
-import ServicesPage from "../Services";
+import ServicesPage from "../Services/Services";
 // import CubeAnimation from "./CubeAnimation";
 
 const AboutUs = () => {
