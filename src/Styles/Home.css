@@ -607,11 +607,11 @@ h2 {
 
 /* Styling the list */
 .why-talvox-list {
-  list-style: none;
   padding: 0;
   max-width: 1000px;
   margin: 0 auto;
 }
+
 
 .why-talvox-list li {
   font-size: 1.2rem;
@@ -622,22 +622,10 @@ h2 {
   position: relative;
 }
 
-/* Add a custom bullet point using a pseudo-element */
-.why-talvox-list li::before {
-  content: '';
-  width: 10px;
-  height: 10px;
-  background-color: black;
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  top: 10px;
-}
-
 /* Styling for the strong (bold) text */
 .why-talvox-list li strong {
-  font-size: 1.3rem;
-  color: black;
+  font-size: 1.4rem;
+  color:  #288073;
   font-weight: 600;
 }
 
