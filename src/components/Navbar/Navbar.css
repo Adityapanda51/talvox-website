@@ -268,78 +268,74 @@
 
 /* General Dropdown Styles */
 
-
-
- /* Dropdown Menu Styles */
-.dropdown-menu {
-  display: none; /* Initially hide the dropdown */
-  position: absolute; /* Position the dropdown absolutely */
-  /* background-color:  #288073; */
-  background: linear-gradient(to bottom right, #f0f4f8, #d0e1f9);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-  border-radius: 10px; /* Rounded corners */
-  margin-top: 2px; /* Space between button and dropdown */
-  z-index: 1000; 
-  animation: fadeIn 0.3s ease; /* Fade-in animation */
-  width: max-content; /* Use max-content to adjust based on content */
-  min-width: 100px; /* Set a minimum width if necessary */
-  padding: 0; /* Remove default padding */
-}
-
-.dropdown-menu.show {
-  display: block; /* Show the dropdown when it has 'show' class */
-}
-
-/* Dropdown Item Styles */
-.dropdown-item {
-  padding: 10px 10px; /* Padding for dropdown items */
-  color: black; /* Text color */
-  text-decoration: none; /* Remove underline */
-  transition: background-color 0.3s, color 0.3s; /* Transition effects */
-  font-size: 0.9rem;
-  max-width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  margin-right: 0;
-  padding-right: 10px;
-}
-
-.dropdown-item:hover {
-  /* background-color: #288073; */
-  background-color: rgba(40, 128, 115, 0.6); /* 80% opacity */
-
-  color:  black; /* Change color on hover */
-  transform: translateY(-2px);
-}
-
-/* Animation Keyframes */
-@keyframes fadeIn {
-  from {
-    opacity: 0; /* Start fully transparent */
-    transform: translateY(-5px); /* Start slightly above */
-  }
-  to {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* End at original position */
-  }
-}
-
-
-/* Style for dropdown caret */
 .dropdown-caret {
-  margin-left: 5px; /* Space between the button text and caret */
-  transition: transform 0.3s ease; /* Optional: Smooth transition */
+  margin-left: 5px;
+  transition: transform 0.3s ease;
   font-size: 1rem;
 }
 
-/* Style for when the dropdown is open */
 .dropdown-caret.open {
-  transform: rotate(180deg); /* Optional: Rotate when open */
+  transform: rotate(180deg);
 }
+
 /* Hide the default Bootstrap caret */
 .nav-link.dropdown-toggle::after {
-  display: none; /* Hides the default caret */
+  display: none;
 }
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  /* background: linear-gradient(to bottom right, white, #288073); */
+  background-color: white; /* Set a solid background color */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+  width: max-content;
+  min-width: 100px;
+  margin: 0;
+  padding: 0;
+  /* max-height: 210px; */
+}
+
+.dropdown-item {
+  color: black;
+  padding: 10px 15px; 
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.dropdown-item:hover {
+  background-color: black; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+  transform: translateY(-2px);
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Remove margin or padding below the last child */
+.dropdown-item:last-child {
+  margin-bottom: 0; /* Ensure there's no margin below the last item */
+}
+
+/* Optional: Add a hover effect for the entire menu */
+.dropdown-menu:hover {
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly change the background on hover */
+}
+
 
 
 
