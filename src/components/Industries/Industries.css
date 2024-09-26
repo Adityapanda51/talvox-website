@@ -82,7 +82,8 @@
     color: white; /* Adjust text color to contrast with background image */
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Align text to the bottom of the card */
+    justify-content: flex-end; 
+    align-items: center;
 }
 
 .industry-card::before {
@@ -98,8 +99,8 @@
 }
 
 .industry-card h2, .industry-card p {
-    position: relative; /* Ensure text is above the overlay */
-    z-index: 2; /* Place text above the overlay */
+    position: relative; 
+    z-index: 2; 
     padding: 10px;
 }
 
