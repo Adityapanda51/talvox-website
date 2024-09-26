@@ -54,7 +54,6 @@ const Careers = () => {
       </div>
 
       <div className="sections">
-
         <div className="card how-to-apply">
           <h2>How to Apply</h2>
           <ol>
@@ -67,8 +66,16 @@ const Careers = () => {
           </ol>
           <p>
             Questions? Contact us at{" "}
-            <strong className="contact"> <a href="mailto:hr@talvox.com">hr@talvox.com</a></strong> or{" "}
-            <strong className="contact"> <a href="tel:040-45011686">040-45011686</a></strong>.
+            <strong className="contact">
+              {" "}
+              <a href="mailto:hr@talvox.com">hr@talvox.com</a>
+            </strong>{" "}
+            or <br></br>
+            <strong className="contact">
+              {" "}
+              <a href="tel:040-45011686">040-45011686</a>
+            </strong>
+            .
           </p>
         </div>
 
@@ -83,39 +90,50 @@ const Careers = () => {
           </p>
         </div>
 
-<div className="card stay-connected">
-  <h2>Stay Connected</h2>
-  <p>
-    Even if you don’t see a current opening that fits your skills, we’d still love to hear from you. Connect with us on LinkedIn or sign up for our newsletter to stay updated on future opportunities.
-  </p>
-  <p>
-    Follow us on{" "}
-    <a
-      href="https://in.linkedin.com/company/talvox-pvt-ltd"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <i className="fab fa-linkedin"></i> LinkedIn
-    </a>{" "}
-    |{" "}
-    <a href="https://twitter.com/talvox" target="_blank" rel="noopener noreferrer"
-     onClick={(e) => e.preventDefault()} // Prevent click action
-     >
-      <i className="fab fa-x"></i> Twitter
-    </a>{" "}
-    |{" "}
-    <a href="https://www.facebook.com/talvox" target="_blank" rel="noopener noreferrer"
-     onClick={(e) => e.preventDefault()} // Prevent click action
-     >
-      <i className="fab fa-facebook"></i> Facebook
-    </a>{" "}
-    |{" "}
-    <a href="https://www.instagram.com/talvoxpvtltd?igsh=bHk1M2tpd2xuem1u" target="_blank" rel="noopener noreferrer">
-      <i className="fab fa-instagram"></i> Instagram
-    </a>
-  </p>
-</div>
-
+        <div className="card stay-connected">
+          <h2>Stay Connected</h2>
+          <p>
+            Even if you don’t see a current opening that fits your skills, we’d
+            still love to hear from you. Connect with us on LinkedIn or sign up
+            for our newsletter to stay updated on future opportunities.
+          </p>
+          <p>
+            Follow us on{" "}
+            <a
+              href="https://in.linkedin.com/company/talvox-pvt-ltd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-linkedin"></i> LinkedIn
+            </a>{" "}
+            |{" "}
+            <a
+              href="https://twitter.com/talvox"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.preventDefault()} // Prevent click action
+            >
+              <i className="fab fa-x"></i> Twitter
+            </a>{" "}
+            |{" "}
+            <a
+              href="https://www.facebook.com/talvox"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.preventDefault()} // Prevent click action
+            >
+              <i className="fab fa-facebook"></i> Facebook
+            </a>{" "}
+            |{" "}
+            <a
+              href="https://www.instagram.com/talvoxpvtltd?igsh=bHk1M2tpd2xuem1u"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-instagram"></i> Instagram
+            </a>
+          </p>
+        </div>
       </div>
 
       <p className="equal-opportunity">
