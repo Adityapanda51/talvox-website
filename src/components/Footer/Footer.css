@@ -44,7 +44,7 @@
 }
 
 .footer-section ul li a:hover {
-  color: blue; 
+  color: #288073;
 }
 
 .footer-map iframe {
@@ -131,25 +131,6 @@
   list-style-type: none;
 }
 
-
-/* .social-media li {
-  display: inline-block;
-}
-
-.social-media a {
-  text-decoration: none;
-  display: inline-block;
-  color: white;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  gap: 8px; 
-}
-
-.social-media ul li a:hover {
-  color: blue;
-} */
-
 .social-icon i {
   font-size: 44px;
   /* color: #288073;  */
@@ -159,16 +140,6 @@
 .social-icon.twitter i { color: #1da1f2; }
 .social-icon.facebook i { color: #3b5998; }
 .social-icon.instagram i { color: #c13584; }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -208,9 +179,6 @@
   color: #333;
 }
 
-.footer-section.social-media a:hover {
-  color: #007bff; /* Optional hover effect */
-}
 
 /* Responsive adjustments for small screens */
 @media (max-width: 768px) {
@@ -306,4 +274,10 @@
   .footer-section.social-media a {
     font-size: 20px; /* Adjust font size */
   }
+}
+
+
+.social-icon:hover {
+  transform: scale(1.4); /* Slightly increase the size on hover */
+  color: #288073; /* Change color on hover (example: a green shade) */
 }
