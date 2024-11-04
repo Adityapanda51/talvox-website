@@ -49,8 +49,8 @@ const Footer = () => {
         <div className="footer-section contact-us">
           <h3>Contact Us</h3>
           <p>
-            <strong>Office Address:</strong> Siri Gajjela Towers, Mothi Nagar,
-            <br></br>Vengal Rao Nagar,<br></br>Ameerpet,<br></br>Hyderabad,
+            <strong>Office Address:</strong><br></br> 8-3-191/153(18a),<br></br> Bhaagyarekha Building, 2nd Floor,
+            <br></br>Vengal Rao Nagar,<br></br>Hyderabad, Telangana,
             500038
           </p>
           <p>
@@ -119,7 +119,10 @@ const Footer = () => {
           <h3>Our Location</h3>
           <iframe
             title="Google Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3781214910005!2d78.4375238755518!3d17.441607083454855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90db46b8b51b%3A0x2cac1d94341055b!2sSiri%20Gajjela%20Towers%2C%20Mothi%20Nagar%2C%20Vengal%20Rao%20Nagar%2C%20Ameerpet%2C%20Hyderabad%2C%20Telangana%20500038!5e0!3m2!1sen!2sin!4v1726255163151!5m2!1sen!2sin"
+            // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3781214910005!2d78.4375238755518!3d17.441607083454855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90db46b8b51b%3A0x2cac1d94341055b!2sSiri%20Gajjela%20Towers%2C%20Mothi%20Nagar%2C%20Vengal%20Rao%20Nagar%2C%20Ameerpet%2C%20Hyderabad%2C%20Telangana%20500038!5e0!3m2!1sen!2sin!4v1726255163151!5m2!1sen!2sin"
+            
+            
+           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15225.542631932107!2d78.4402934!3d17.441246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90db382f03fd%3A0xcfb3d608ca682910!2sCANARA%20BANK%20ATM!5e0!3m2!1sen!2sin!4v1730730795125!5m2!1sen!2sin"
             width="100%"
             height="150"
             style={{ border: 0 }}

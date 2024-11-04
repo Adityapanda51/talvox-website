@@ -67,9 +67,9 @@ const ContactUs = () => {
               <h2>Contact Information</h2>
             </div>
             <p>
-              <strong>Office Address:</strong> Siri Gajjela Towers, Mothi Nagar,
+              <strong>Office Address:</strong> 8-3-191/153(18a),Bhaagyarekha Building, 2nd Floor,
               <br />
-              Vengal Rao Nagar, Ameerpet, Hyderabad, 500038
+              Vengal Rao Nagar, Hyderabad, Telangana, 500038
             </p>
             <p>
               <strong>Phone:</strong> 040-45011686

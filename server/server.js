@@ -37,7 +37,7 @@ app.post('/send', (req, res) => {
       console.error('Error sending email:', error); // Log error for debugging
       return res.status(500).json({ message: 'Failed to send email', error });
     }
-    console.log('Email sent:', info.response); // Log success for debugging
+    console.log('Email sent:', info.response); // Log success
     res.status(200).json({ message: 'Email sent successfully' });
   });
 });
