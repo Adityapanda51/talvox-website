@@ -31,6 +31,12 @@
   color: black;
 }
 
+
+.navbar .nav-link, .navbar .nav-item {
+  color: black !important; 
+}
+
+
 .navbar-contact {
   margin-left: auto; /* Push 'Contact Us' to the far right */
 }
@@ -68,17 +74,27 @@
 
 
 .navbar .navbar-nav .nav-link:hover {
-  color: #288073;
+  color: #288073 !important;
    transform: scale(1.1);
     transform: translateY(-3px);
     font-weight: bold;
 }
 
 
-.contact-link {
+/* .contact-link {
   color: #288073;
   font-weight: 700;
+} */
+
+.navbar .nav-link.contact-link {
+  color: #288073 !important;
+  font-weight: 700;
 }
+
+.navbar .nav-link.contact-link:hover {
+  color: black !important;
+}
+
 
 /* Navbar Toggle (Hamburger Icon) */
 .navbar-toggle {
