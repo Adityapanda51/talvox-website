@@ -7,8 +7,7 @@ const Ticker = () => {
   const [isPaused, setIsPaused] = useState(false);
 
   const handleClick = () => {
-    console.log("Ticker clicked");
-    navigate("/corporate-gifting"); // Make sure this path is correct
+    navigate("/corporate-gifting"); 
   };
 
   const handleMouseEnter = () => {
