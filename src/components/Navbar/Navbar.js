@@ -152,7 +152,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/logo1.png';
+import logo from '../../assets/logo_talvox.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.css';
 

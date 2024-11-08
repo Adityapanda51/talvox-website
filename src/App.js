@@ -14,17 +14,23 @@ import HRDetailPage from './components/HRServices/HRServices';
 import DigitalMarketingDetailPage from './components/DigitalMarketingServices/DigitalMarketingServices';
 import CustomNavbar from './components/Navbar/Navbar';
 import HomePage from './components/HomePage/HomePage';
+import CorporateGifting from './components/HomePage/CorporateGifting/CorporateGifting';
+import Ticker from './components/Autoscroll-Mesage/Ticker';
 
 
 const App = () => {
   return (
+    
     <Router>
       {/* Navbar is visible on all pages */}
       {/* <Navbar /> */}
       <CustomNavbar />
+      <Ticker />
+     
       <Routes>
         {/* Define routes for each component */}
         <Route path="/" element={<HomePage />} />
+        <Route path="/corporate-gifting" element={<CorporateGifting />} />
         <Route path="/about" element={<AboutUs/>} />
         <Route path="/services" element={<Services />} />
         <Route path="/it-services" element={<ITServices />} />
@@ -36,8 +42,10 @@ const App = () => {
         <Route path="/contact" element={<ContactUs />} />
         {/* Footer can be shown on every page */}
       </Routes>
+     
       <Footer />
     </Router>
+    
   );
 };
 

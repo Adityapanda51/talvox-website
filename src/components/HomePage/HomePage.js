@@ -4,6 +4,8 @@ import AboutUsSection from './AboutUsSection/AboutUsSection'
 import WhatWeOfferSection from './WhatWeOfferSection/WhatWeOfferSection'
 import WhyChooseTalvoxSection from './WhyChooseTalvoxSection/WhyChooseTalvoxSection'
 import Industries from '../Industries/Industries'
+import CorporateGifting from './CorporateGifting/CorporateGifting'
+
 
 const HomePage = () => {
   return (
@@ -13,6 +15,8 @@ const HomePage = () => {
       <WhatWeOfferSection />
       <WhyChooseTalvoxSection />
       <Industries />
+      <CorporateGifting />
+     
     </div>
   )
 }

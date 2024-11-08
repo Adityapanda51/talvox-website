@@ -1,0 +1,111 @@
+/* .ticker-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .ticker-message {
+    display: inline-block;
+    padding-left: 100%; 
+    animation: scroll 20s linear infinite; 
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  
+  .ticker-message.paused {
+    animation-play-state: paused;
+  }  */
+  
+
+
+/* .ticker {
+    width: 100%;
+    background-color: white;
+    color: white !important;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .ticker-message {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 30s linear infinite;
+    padding-left: 100%; 
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  } */
+  
+
+  
+
+  /* Ticker container */
+.ticker {
+    background-color: #288073;
+    padding-top: 15px;
+    height: 2.8em;
+    overflow: hidden;
+    bottom: 0;
+    white-space: nowrap;
+    cursor: pointer; /* Cursor indicates click ability */
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Ticker message */
+  .ticker-message {
+    display: inline-block;
+    animation: scroll 15s linear infinite;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: transparent;
+  }
+  
+  .ticker-message.paused {
+    animation-play-state: paused;
+  }
+  
+  /* Keyframes for scrolling text */
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Hover effect for ticker */
+  .ticker:hover {
+    background-color: black;
+  }
+  
