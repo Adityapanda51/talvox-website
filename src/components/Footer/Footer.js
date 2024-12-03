@@ -49,12 +49,12 @@ const Footer = () => {
         <div className="footer-section contact-us">
           <h3>Contact Us</h3>
           <p>
-            <strong>Office Address:</strong><br></br> 8-3-191/153(18a),<br></br> Bhaagyarekha Building, 2nd Floor,
-            <br></br>Vengal Rao Nagar,<br></br>Hyderabad, Telangana,
+            <strong>Office Address:</strong><br></br> 8-3-224/11/D/5/1 <br></br>(G-127),
+            <br></br>Madhura Nagar,<br></br>Hyderabad, Telangana, India,
             500038
           </p>
           <p>
-            <strong>Phone:</strong> <a href="tel:04045011686">040-45011686</a>
+            <strong>Phone:</strong> <a href="tel:04031733088">04031733088</a>
           </p>
           <p>
             <strong>Email:</strong>{" "}

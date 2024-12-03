@@ -73,7 +73,7 @@ const Careers = () => {
             or <br></br>
             <strong className="contact">
               {" "}
-              <a href="tel:040-45011686">040-45011686</a>
+              <a href="tel:04031733088">04031733088</a>
             </strong>
             .
           </p>
