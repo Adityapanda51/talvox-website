@@ -111,16 +111,16 @@ const Careers = () => {
               href="https://twitter.com/talvox"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={(e) => e.preventDefault()} // Prevent click action
+              // onClick={(e) => e.preventDefault()} // Prevent click action
             >
               <i className="fab fa-x"></i> Twitter
             </a>{" "}
             |{" "}
             <a
-              href="https://www.facebook.com/talvox"
+              href="https://www.facebook.com/profile.php?id=61565958100956&mibextid=ZbWKwL"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={(e) => e.preventDefault()} // Prevent click action
+              // onClick={(e) => e.preventDefault()} // Prevent click action
             >
               <i className="fab fa-facebook"></i> Facebook
             </a>{" "}

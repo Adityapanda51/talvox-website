@@ -92,11 +92,11 @@ const Footer = () => {
 
             <li>
               <a
-                href="https://www.facebook.com/talvox"
+                href="https://www.facebook.com/profile.php?id=61565958100956&mibextid=ZbWKwL"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon facebook"
-                onClick={(e) => e.preventDefault()} // Prevent click action
+                // onClick={(e) => e.preventDefault()} // Prevent click action
               >
                 <i className="fab fa-facebook"></i>
               </a>
