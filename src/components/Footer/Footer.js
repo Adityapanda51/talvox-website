@@ -49,9 +49,9 @@ const Footer = () => {
         <div className="footer-section contact-us">
           <h3>Contact Us</h3>
           <p>
-            <strong>Office Address:</strong><br></br> 8-3-224/11/D/5/1 <br></br>(G-127),
-            <br></br>Madhura Nagar,<br></br>Hyderabad, Telangana, India,
-            500038
+            <strong>Office Address:</strong>
+            <br></br> 8-3-224/11/D/5/1 <br></br>(G-127),
+            <br></br>Madhura Nagar,<br></br>Hyderabad, Telangana, India, 500038
           </p>
           <p>
             <strong>Phone:</strong> <a href="tel:04031733088">04031733088</a>
@@ -87,7 +87,6 @@ const Footer = () => {
                   alt="X"
                   style={{ width: "44px", height: "32px" }}
                 />
-              
               </a>
             </li>
 
@@ -99,7 +98,7 @@ const Footer = () => {
                 className="social-icon facebook"
                 onClick={(e) => e.preventDefault()} // Prevent click action
               >
-                <i className="fab fa-facebook"></i> 
+                <i className="fab fa-facebook"></i>
               </a>
             </li>
             <li>
@@ -119,11 +118,11 @@ const Footer = () => {
           <h3>Our Location</h3>
           <iframe
             title="Google Map"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15225.542631932107!2d78.4402934!3d17.441246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90db382f03fd%3A0xcfb3d608ca682910!2sCANARA%20BANK%20ATM!5e0!3m2!1sen!2sin!4v1730730795125!5m2!1sen!2sin"
+            src="https://www.google.com/maps?q=17.4386667,78.4320833&z=15&output=embed"
             width="100%"
-            height="150"
+            height="450"
             style={{ border: 0 }}
-            allowFullScreen
+            allowfullscreen=""
             loading="lazy"
           ></iframe>
         </div>
